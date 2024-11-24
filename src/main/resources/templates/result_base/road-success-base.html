@@ -1,0 +1,24 @@
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorate="~{blocks/template.html}">
+<th:block layout:fragment="alert-content">
+    <div class="card text-center">
+        <h2 class="text-primary">МОДУЛЬ "АДМИНИСТРИРОВАНИЕ БАЗЫ ДАННЫХ"</h2>
+        <br>
+        <h3>Данные успешно загружены, выберите действие:</h3>
+        <br><br>
+        <a class="btn btn-outline-secondary" href="/admin_data_base/linear_object/linear_road"><h4>Продолжить загрузку данных по данному объекту</h4></a><br>
+        <a class="btn btn-outline-secondary" href="/admin_data_base/linear_object"><h4>Выполненную загрузку отменить и сделать заново</h4></a><br>
+
+        <a class="btn btn-outline-secondary" href="/admin_data_base/tech_object"><h4>Сформировать полностью базу данных на загруженных данных</h4></a><br>
+
+        <a class="btn btn-outline-secondary" href="/admin_data_base"><h4>Вернуться в начало модуля</h4></a><br><br><br>
+        <div class="card">
+            <div class="card text-center">
+                <a class="btn btn-outline-secondary fw-bolder " href="../start-page.html" th:href="@{/}">
+                    Вернуться на начальную страницу</a>
+            </div>
+        </div>
+    </div>
+</th:block>
+</html>

@@ -1,0 +1,99 @@
+<th:block lang="en" xmlns:th="http://www.thymeleaf.org" th:fragment="toggle-input">
+    <script th:inline="javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            var roadChecked = document.getElementById('activeRoad');
+            var lineChecked = document.getElementById('activeLine');
+            var vvpChecked = document.getElementById('activeVvp');
+            var cableRackChecked = document.getElementById('activeCableRack');
+            var ktplpChecked = document.getElementById('activeKtplp');
+            var siknChecked = document.getElementById('activeSikn');
+
+            // roadChecked.checked = localStorage.getItem("activeRoadChecked") === "true";
+            // lineChecked.checked = localStorage.getItem("activeLineChecked") === "true";
+            // vvpChecked.checked = localStorage.getItem("activeVvpChecked") === "true";
+            // cableRackChecked.checked = localStorage.getItem("activeCableRackChecked") === "true";
+            // ktplpChecked.checked = localStorage.getItem("activeKtplpChecked") === "true";
+            // siknChecked.checked = localStorage.getItem("activeSiknChecked") === "true";
+
+            toggleInputRoad(roadChecked);
+            toggleInputLine(lineChecked);
+            toggleInputVvp(vvpChecked);
+            toggleInputCableRack(cableRackChecked);
+            toggleInputSikn(siknChecked);
+            toggleInputKtplp(ktplpChecked)
+            //
+            // roadChecked.addEventListener("change", function() {
+            //     localStorage.setItem("activeRoadChecked", roadChecked.checked);
+            // });
+            // lineChecked.addEventListener("change", function() {
+            //     localStorage.setItem("activeLineChecked", lineChecked.checked);
+            // });
+            // vvpChecked.addEventListener("change", function() {
+            //     localStorage.setItem("activeVvpChecked", vvpChecked.checked);
+            // });
+            // cableRackChecked.addEventListener("change", function() {
+            //     localStorage.setItem("activeCableRackChecked", cableRackChecked.checked);
+            // });
+            // siknChecked.addEventListener("change", function() {
+            //     localStorage.setItem("activeSiknChecked", siknChecked.checked);
+            // });
+            // ktplpChecked.addEventListener("change", function() {
+            //     localStorage.setItem("activeKtplpChecked", ktplpChecked.checked);
+            // });
+        });
+
+        function toggleInputRoad(checkbox) {
+            var inputFieldRoad = document.getElementById('roadDiv');
+            if (checkbox.checked) {
+                inputFieldRoad.style.display = 'inline';
+            } else {
+                inputFieldRoad.style.display = 'none';
+            }
+        }
+
+        function toggleInputLine(checkbox) {
+            var inputFieldLine = document.getElementById('lineDiv');
+            if (checkbox.checked) {
+                inputFieldLine.style.display = 'inline';
+            } else {
+                inputFieldLine.style.display = 'none';
+            }
+        }
+
+        function toggleInputVvp(checkbox) {
+            var inputFieldVvp = document.getElementById('vvpDiv');
+            if (checkbox.checked) {
+                inputFieldVvp.style.display = 'inline';
+            } else {
+                inputFieldVvp.style.display = 'none';
+            }
+        }
+
+        function toggleInputCableRack(checkbox) {
+            var inputFieldCableRack = document.getElementById('cableRackDiv');
+            if (checkbox.checked) {
+                inputFieldCableRack.style.display = 'inline';
+            } else {
+                inputFieldCableRack.style.display = 'none';
+            }
+        }
+
+        function toggleInputSikn(checkbox) {
+            var inputFieldSikn = document.getElementById('siknDiv');
+            if (checkbox.checked) {
+                inputFieldSikn.style.display = 'inline';
+            } else {
+                inputFieldSikn.style.display = 'none';
+            }
+        }
+
+        function toggleInputKtplp(checkbox) {
+            var inputFieldKtplp = document.getElementById('ktplpDiv');
+            if (checkbox.checked) {
+                inputFieldKtplp.style.display = 'inline';
+            } else {
+                inputFieldKtplp.style.display = 'none';
+            }
+        }
+    </script>
+</th:block>

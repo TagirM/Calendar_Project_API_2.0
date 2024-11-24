@@ -1,0 +1,128 @@
+<th:block lang="en" xmlns:th="http://www.thymeleaf.org" th:fragment="toggle-input">
+    <script th:inline="javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            var roadChecked = document.getElementById('activeRoad');
+            var lineChecked = document.getElementById('activeLine');
+            var vvpChecked = document.getElementById('activeVvp');
+            var cableRackChecked = document.getElementById('activeCableRack');
+            var mupnChecked = document.getElementById('activeMupn');
+            var vecChecked = document.getElementById('activeVec');
+            var vjkChecked = document.getElementById('activeVjk');
+            var mpsChecked = document.getElementById('activeMps');
+
+            // roadChecked.checked = localStorage.getItem("activeRoadChecked") === "true";
+            // lineChecked.checked = localStorage.getItem("activeLineChecked") === "true";
+            // vvpChecked.checked = localStorage.getItem("activeVvpChecked") === "true";
+            // cableRackChecked.checked = localStorage.getItem("activeCableRackChecked") === "true";
+            // mupnChecked.checked = localStorage.getItem("activeMupnChecked") === "true";
+            // vecChecked.checked = localStorage.getItem("activeVecChecked") === "true";
+            // vjkChecked.checked = localStorage.getItem("activeVjkChecked") === "true";
+            // mpsChecked.checked = localStorage.getItem("activeMpsChecked") === "true";
+
+            toggleInputRoad(roadChecked);
+            toggleInputLine(lineChecked);
+            toggleInputMupn(mupnChecked);
+            toggleInputVec(vecChecked);
+            toggleInputVvp(vvpChecked);
+            toggleInputCableRack(cableRackChecked);
+            toggleInputVjk(vjkChecked);
+            toggleInputMps(mpsChecked);
+
+            // roadChecked.addEventListener("change", function() {
+            //     localStorage.setItem("activeRoadChecked", roadChecked.checked);
+            // });
+            // lineChecked.addEventListener("change", function() {
+            //     localStorage.setItem("activeLineChecked", lineChecked.checked);
+            // });
+            // vvpChecked.addEventListener("change", function() {
+            //     localStorage.setItem("activeVvpChecked", vvpChecked.checked);
+            // });
+            // cableRackChecked.addEventListener("change", function() {
+            //     localStorage.setItem("activeCableRackChecked", cableRackChecked.checked);
+            // });
+            // mupnChecked.addEventListener("change", function() {
+            //     localStorage.setItem("activeMupnChecked", mupnChecked.checked);
+            // });
+            // vecChecked.addEventListener("change", function() {
+            //     localStorage.setItem("activeVecChecked", vecChecked.checked);
+            // });
+            // vjkChecked.addEventListener("change", function() {
+            //     localStorage.setItem("activeVjkChecked", vjkChecked.checked);
+            // });
+            // mpsChecked.addEventListener("change", function() {
+            //     localStorage.setItem("activeMpsChecked", mpsChecked.checked);
+            // });
+        });
+        function toggleInputRoad(checkbox) {
+            var inputFieldRoad = document.getElementById('roadDiv');
+            if (checkbox.checked) {
+                inputFieldRoad.style.display = 'inline';
+            } else {
+                inputFieldRoad.style.display = 'none';
+            }
+        }
+
+        function toggleInputLine(checkbox) {
+            var inputFieldLine = document.getElementById('lineDiv');
+            if (checkbox.checked) {
+                inputFieldLine.style.display = 'inline';
+            } else {
+                inputFieldLine.style.display = 'none';
+            }
+        }
+
+        function toggleInputMupn(checkbox) {
+            var inputFieldMupn = document.getElementById('mupnDiv');
+            if (checkbox.checked) {
+                inputFieldMupn.style.display = 'inline';
+            } else {
+                inputFieldMupn.style.display = 'none';
+            }
+        }
+
+        function toggleInputVec(checkbox) {
+            var inputFieldVec = document.getElementById('vecDiv');
+            if (checkbox.checked) {
+                inputFieldVec.style.display = 'inline';
+            } else {
+                inputFieldVec.style.display = 'none';
+            }
+        }
+
+        function toggleInputVvp(checkbox) {
+            var inputFieldVvp = document.getElementById('vvpDiv');
+            if (checkbox.checked) {
+                inputFieldVvp.style.display = 'inline';
+            } else {
+                inputFieldVvp.style.display = 'none';
+            }
+        }
+
+        function toggleInputCableRack(checkbox) {
+            var inputFieldCableRack = document.getElementById('cableRackDiv');
+            if (checkbox.checked) {
+                inputFieldCableRack.style.display = 'inline';
+            } else {
+                inputFieldCableRack.style.display = 'none';
+            }
+        }
+
+        function toggleInputVjk(checkbox) {
+            var inputFieldVjk = document.getElementById('vjkDiv');
+            if (checkbox.checked) {
+                inputFieldVjk.style.display = 'inline';
+            } else {
+                inputFieldVjk.style.display = 'none';
+            }
+        }
+
+        function toggleInputMps(checkbox) {
+            var inputFieldMps = document.getElementById('mpsDiv');
+            if (checkbox.checked) {
+                inputFieldMps.style.display = 'inline';
+            } else {
+                inputFieldMps.style.display = 'none';
+            }
+        }
+    </script>
+</th:block>

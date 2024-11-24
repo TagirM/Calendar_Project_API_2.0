@@ -1,0 +1,29 @@
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorate="~{blocks/template.html}">
+<th:block layout:fragment="alert-content">
+    <div class="card text-center">
+        <h2 class="text-primary">МОДУЛЬ "АДМИНИСТРИРОВАНИЕ БАЗЫ ДАННЫХ"</h2>
+        <br>
+        <h3>Выберете группу объектов проектирования для работы с базой данных</h3>
+        <br><br>
+        <a class="btn btn-outline-secondary disabled" role="button" aria-disabled="true" href="/admin_data_base/linear_object/field_pipeline"><h4>Промысловый
+            трубопровод с вспомогательными сооружениями</h4></a><br><br>
+        <a class="btn btn-outline-secondary disabled" role="button" aria-disabled="true"
+           href="/admin_data_base/linear_object/main_pipeline"><h4>Магистральный трубопровод с вспомогательными
+            сооружениями</h4></a><br><br>
+        <a class="btn btn-outline-secondary disabled" role="button" aria-disabled="true"
+           href="/admin_data_base/linear_object/linear_line"><h4>Линии электропередач с вспомогательными
+            сооружениями</h4></a><br><br>
+        <a class="btn btn-outline-secondary"
+           href="/admin_data_base/linear_object/linear_road"><h4>Автомобильная дорога (мост) с вспомогательными
+            сооружениями</h4></a><br><br><br>
+        <div class="card">
+            <div class="card text-center">
+                <a class="btn btn-outline-secondary fw-bolder " href="../start-page.html" th:href="@{/}">
+                    Вернуться назад</a>
+            </div>
+        </div>
+    </div>
+</th:block>
+</html>

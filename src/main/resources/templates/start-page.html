@@ -1,0 +1,14 @@
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorate="~{blocks/template.html}">
+<th:block layout:fragment="alert-content">
+    <div class="card text-center">
+        <h2 class="text-primary">ДОБРО ПОЖАЛОВАТЬ В МОДУЛЬНЫЙ СЕРВИС КАЛЕНДАРЬ!</h2>
+        <br>
+        <h3>Выберете модуль для работы</h3>
+        <br><br>
+        <a class="btn btn-outline-secondary" href="/admin_data_base"><h4>Модуль "Администрирование базы даннных"</h4></a><br>
+        <a class="btn btn-outline-secondary" href="/calendar_application"><h4>Модуль "Работа с приложением "Календарь"</h4></a><br>
+    </div>
+</th:block>
+</html>
