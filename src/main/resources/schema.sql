@@ -181,9 +181,8 @@ create table engineering_surveys (
     id SERIAL PRIMARY KEY,
     facility VARCHAR(255),
     unit_measurement VARCHAR(255),
-    resource_for_relocation_specialists double precision,
+    resource_engineering_survey_constant double precision,
     resource_for_geodesy double precision,
-    resource_for_fixing_geodesy double precision,
     resource_for_soil_drilling double precision,
     resource_for_lab_research double precision,
     resource_for_eng_survey_report double precision

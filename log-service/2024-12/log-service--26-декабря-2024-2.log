@@ -1,0 +1,48 @@
+2024-12-26T22:12:27.405+0700 INFO info message
+2024-12-26T22:12:27.407+0700 ERROR info message
+2024-12-26T22:12:27.477+0700 INFO info message
+2024-12-26T22:12:27.477+0700 ERROR info message
+2024-12-26T22:12:27.678+0700 INFO HV000001: Hibernate Validator 8.0.1.Final
+2024-12-26T22:12:27.706+0700 INFO Starting Main using Java 19.0.1 with PID 17304 (E:\MyJob\calendar_api\target\classes started by Тагир in E:\MyJob\calendar_api)
+2024-12-26T22:12:27.709+0700 INFO No active profile set, falling back to 1 default profile: "default"
+2024-12-26T22:12:27.930+0700 INFO Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-26T22:12:27.930+0700 INFO For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-26T22:12:28.398+0700 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-26T22:12:28.463+0700 INFO Finished Spring Data repository scanning in 60 ms. Found 15 JPA repository interfaces.
+2024-12-26T22:12:28.820+0700 INFO Tomcat initialized with port 8080 (http)
+2024-12-26T22:12:28.827+0700 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-26T22:12:28.828+0700 INFO Starting service [Tomcat]
+2024-12-26T22:12:28.828+0700 INFO Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-12-26T22:12:28.885+0700 INFO Initializing Spring embedded WebApplicationContext
+2024-12-26T22:12:28.885+0700 INFO Root WebApplicationContext: initialization completed in 954 ms
+2024-12-26T22:12:28.909+0700 INFO HikariPool-1 - Starting...
+2024-12-26T22:12:28.955+0700 INFO HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-12-26T22:12:28.955+0700 INFO HikariPool-1 - Start completed.
+2024-12-26T22:12:28.961+0700 INFO H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-12-26T22:12:29.021+0700 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-26T22:12:29.042+0700 INFO HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-12-26T22:12:29.057+0700 INFO HHH000026: Second-level cache disabled
+2024-12-26T22:12:29.186+0700 INFO No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-26T22:12:29.204+0700 WARN HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-26T22:12:30.100+0700 INFO HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-26T22:12:30.189+0700 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T22:12:30.813+0700 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-26T22:12:31.159+0700 INFO LiveReload server is running on port 35729
+2024-12-26T22:12:31.175+0700 INFO Starting ProtocolHandler ["http-nio-8080"]
+2024-12-26T22:12:31.184+0700 INFO Tomcat started on port 8080 (http) with context path ''
+2024-12-26T22:12:31.190+0700 INFO Started Main in 3.71 seconds (process running for 4.499)
+2024-12-26T22:12:39.096+0700 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-26T22:12:39.097+0700 INFO Initializing Servlet 'dispatcherServlet'
+2024-12-26T22:12:39.098+0700 INFO Completed initialization in 1 ms
+2024-12-26T22:12:39.618+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-12-26T22:12:40.787+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-12-26T22:12:44.204+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-12-26T22:12:46.037+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-12-26T22:12:54.398+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-12-26T22:12:55.791+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-12-26T22:13:23.041+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-12-26T22:13:41.715+0700 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-26T22:13:41.723+0700 WARN Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-26T22:13:41.723+0700 INFO HikariPool-1 - Shutdown initiated...
+2024-12-26T22:13:41.725+0700 INFO HikariPool-1 - Shutdown completed.

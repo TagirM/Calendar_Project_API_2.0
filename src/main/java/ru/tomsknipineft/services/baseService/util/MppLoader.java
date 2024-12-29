@@ -44,6 +44,7 @@ public class MppLoader {
                     List<Relation> successors = t.getSuccessors();
                     List<String> successorsName = successors.stream().map(Relation::getSuccessorTask).map(Task::getName).toList();
                     String documentType = (String) t.get(TaskField.TEXT10);
+                    boolean isActiveTask = t.getActive();
                     Double percentComplete = (Double) t.get(TaskField.PERCENT_COMPLETE);
                     Duration durationTask = t.getDuration();
                     double durationTaskInDay = t.getDuration().getDuration();
@@ -52,7 +53,7 @@ public class MppLoader {
 
                     }
                     if (departmentName != null) {
-                        taskSchedule.setTaskName(t.getName()).setDepartment(departmentName).setTaskStart(start)
+                        taskSchedule.setTaskName(t.getName()).setActive(isActiveTask).setDepartment(departmentName).setTaskStart(start)
                                 .setTasksFinish(finish).setTaskDuration(durationTaskInDay)
                                 .setPredecessors(predecessorsName).setSuccessors(successorsName).setTypeDocumentation(documentType)
                                 .setPercentageCompletion(percentComplete);
@@ -75,6 +76,7 @@ public class MppLoader {
                             List<Relation> successors1 = greatChild.getSuccessors();
                             List<String> successorsName1 = successors1.stream().map(Relation::getSuccessorTask).map(Task::getName).toList();
                             String documentType1 = (String) greatChild.get(TaskField.TEXT10);
+                            boolean isActiveTask1 = greatChild.getActive();
                             Double percentComplete1 = (Double) greatChild.get(TaskField.PERCENT_COMPLETE);
                             Duration durationTask1 = greatChild.getDuration();
                             double durationTaskInDay1 = greatChild.getDuration().getDuration();
@@ -82,7 +84,7 @@ public class MppLoader {
                                 durationTaskInDay1 = durationTaskInDay1 / 8;
                             }
                             if (departmentName1 != null) {
-                                taskSchedule1.setTaskName(greatChild.getName()).setDepartment(departmentName1).setTaskStart(start1)
+                                taskSchedule1.setTaskName(greatChild.getName()).setActive(isActiveTask1).setDepartment(departmentName1).setTaskStart(start1)
                                         .setTasksFinish(finish1).setTaskDuration(durationTaskInDay1)
                                         .setPredecessors(predecessorsName1).setSuccessors(successorsName1).setTypeDocumentation(documentType1)
                                         .setPercentageCompletion(percentComplete1);
@@ -120,6 +122,7 @@ public class MppLoader {
                     List<Relation> successors = t.getSuccessors();
                     List<String> successorsName = successors.stream().map(Relation::getSuccessorTask).map(Task::getName).toList();
                     String documentType = (String) t.get(TaskField.TEXT10);
+                    boolean isActiveTask = t.getActive();
                     Double percentComplete = (Double) t.get(TaskField.PERCENT_COMPLETE);
                     Duration durationTask = t.getDuration();
                     double durationTaskInDay = t.getDuration().getDuration();
@@ -127,7 +130,7 @@ public class MppLoader {
                         durationTaskInDay = durationTaskInDay / 8;
                     }
                     if (departmentName != null) {
-                        taskSchedule.setTaskName(t.getName()).setDepartment(departmentName).setTaskStart(start)
+                        taskSchedule.setTaskName(t.getName()).setActive(isActiveTask).setDepartment(departmentName).setTaskStart(start)
                                 .setTasksFinish(finish).setTaskDuration(durationTaskInDay)
                                 .setPredecessors(predecessorsName).setSuccessors(successorsName).setTypeDocumentation(documentType)
                                 .setPercentageCompletion(percentComplete);
@@ -150,6 +153,7 @@ public class MppLoader {
                             List<Relation> successors1 = greatChild.getSuccessors();
                             List<String> successorsName1 = successors1.stream().map(Relation::getSuccessorTask).map(Task::getName).toList();
                             String documentType1 = (String) greatChild.get(TaskField.TEXT10);
+                            boolean isActiveTask1 = greatChild.getActive();
                             Double percentComplete1 = (Double) greatChild.get(TaskField.PERCENT_COMPLETE);
                             Duration durationTask1 = greatChild.getDuration();
                             double durationTaskInDay1 = greatChild.getDuration().getDuration();
@@ -157,7 +161,7 @@ public class MppLoader {
                                 durationTaskInDay1 = durationTaskInDay1 / 8;
                             }
                             if (departmentName1 != null) {
-                                taskSchedule1.setTaskName(greatChild.getName()).setDepartment(departmentName1).setTaskStart(start1)
+                                taskSchedule1.setTaskName(greatChild.getName()).setActive(isActiveTask1).setDepartment(departmentName1).setTaskStart(start1)
                                         .setTasksFinish(finish1).setTaskDuration(durationTaskInDay1)
                                         .setPredecessors(predecessorsName1).setSuccessors(successorsName1).setTypeDocumentation(documentType1)
                                         .setPercentageCompletion(percentComplete1);

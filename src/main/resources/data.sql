@@ -11,9 +11,12 @@ INSERT INTO backfill_wells (id, active, object_type, well, stage, resource_for_e
                             resource_for_work_doc, resource_for_proj_doc, resource_for_est_doc)
 VALUES (4, 'true', 'AREA', 24, 1, 8, 11, 11, 10, 19, 27, 10);
 
-INSERT INTO engineering_surveys (id, facility, unit_measurement, resource_for_relocation_specialists, resource_for_geodesy, resource_for_fixing_geodesy, resource_for_soil_drilling,
+INSERT INTO engineering_surveys (id, facility, unit_measurement, resource_engineering_survey_constant, resource_for_geodesy, resource_for_soil_drilling,
                                  resource_for_lab_research, resource_for_eng_survey_report)
-VALUES (1, 'Автомобильная дорога', '1 км', 4.0, 1.0, 2.0, 4.0, 10.0, 14.0);
+VALUES (1, 'Автомобильная дорога', '0,5 км', 16.0, 3.0, 3.0, 10.0, 14.0);
+INSERT INTO engineering_surveys (id, facility, unit_measurement, resource_engineering_survey_constant, resource_for_geodesy, resource_for_soil_drilling,
+                                 resource_for_lab_research, resource_for_eng_survey_report)
+VALUES (2, 'Автомобильная дорога', '1 км', 16.0, 4.0, 4.0, 10.0, 14.0);
 -- INSERT INTO roads (id, active, object_type, bridge_exist, bridge_road_count, bridge_road_length, category, length, count, stage, resource_for_eng_geodetic_survey, resource_for_eng_geological_survey,
 --                    resource_for_lab_research, resource_for_eng_survey_report, resource_for_work_doc, resource_for_proj_doc, resource_for_est_doc)
 -- VALUES (1, 'true', 'LINEAR', 'false', 0, 0, 4, 1, 1, 1, 4, 3, 10, 8, 10, 27, 8);

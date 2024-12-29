@@ -23,14 +23,11 @@ public class EngineeringSurveys {
     @Column(name = "unit_measurement")
     private String unitMeasurement;
 
-    @Column(name = "resource_for_relocation_specialists")
-    private Double resourceForRelocationSpecialists;
+    @Column(name = "resource_engineering_survey_constant")
+    private Double resourceEngineeringSurveyConstant;
 
     @Column(name = "resource_for_geodesy")
     private Double resourceForGeodesy;
-
-    @Column(name = "resource_for_fixing_geodesy")
-    private Double resourceForFixingGeodesy;
 
     @Column(name = "resource_for_soil_drilling")
     private Double resourceForSoilDrilling;

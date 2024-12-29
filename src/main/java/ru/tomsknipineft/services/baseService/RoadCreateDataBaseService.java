@@ -55,11 +55,11 @@ public class RoadCreateDataBaseService {
     public Road loadEngineeringSurveys(Road road) {
         EngineeringSurveys engineeringSurveys = engineeringSurveysRepository.findEngineeringSurveysByFacility(road.getName()).orElseThrow(() ->
                 new NoSuchEntityException("Сооружение в базе данных отсутствует"));
-        double resourceForEngGeodeticSurvey = engineeringSurveys.getResourceForGeodesy() * road.getLength() +
-                engineeringSurveys.getResourceForFixingGeodesy() + engineeringSurveys.getResourceForRelocationSpecialists(); // уточнить расчет
+        double resourceForEngSurveyConstant = engineeringSurveys.getResourceEngineeringSurveyConstant(); // включить в модель
+
+        double resourceForEngGeodeticSurvey = engineeringSurveys.getResourceForGeodesy() * road.getLength(); // уточнить расчет
         road.setResourceForEngGeodeticSurvey((int) resourceForEngGeodeticSurvey);
-        double resourceForEngGeologicalSurvey = engineeringSurveys.getResourceForSoilDrilling() * road.getLength() +
-                +engineeringSurveys.getResourceForRelocationSpecialists(); // уточнить расчет
+        double resourceForEngGeologicalSurvey = engineeringSurveys.getResourceForSoilDrilling() * road.getLength(); // уточнить расчет
         road.setResourceForEngGeologicalSurvey((int) resourceForEngGeologicalSurvey);
         double resourceForLabResearch = engineeringSurveys.getResourceForLabResearch() + road.getLength(); // уточнить расчет
         road.setResourceForLabResearch((int) resourceForLabResearch);
@@ -72,7 +72,8 @@ public class RoadCreateDataBaseService {
         String filePath = "E://MyJob/calendar_api/log-service/downloads_schedule/" + file.getOriginalFilename(); // уточнить адрес при размещении на сервере
 
         file.transferTo(new File(filePath)); // Сохранение файла
-        road = loadEngineeringSurveys(loadRoadSchedule(road, filePath));
+//        road = loadEngineeringSurveys(loadRoadSchedule(road, filePath));
+        road = loadRoadSchedule(road, filePath);
         roadRepository.save(road);
     }
 }
