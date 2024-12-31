@@ -48,7 +48,8 @@ public class Road implements OilPad, EntityProject, Serializable {
     @ElementCollection(targetClass = String.class, fetch = FetchType.EAGER)
     @Column(name = "additional_design_departments")
     private Set<String> additionalDesignDepartments = new HashSet<>(List.of("Отдел тепловодоснабжения и пожаротушения",
-            "Отдел землеустройства", "Отдел смет", "Отдел ПОС", "Отдел оценки воздействия на окружающую среду", "ГИП"));
+            "Отдел землеустройства", "Отдел смет", "Отдел ПОС", "Отдел оценки воздействия на окружающую среду",
+            "Департамент экологии", "ГИП"));
 
     // тип объекта
     @Column(name = "object_type")

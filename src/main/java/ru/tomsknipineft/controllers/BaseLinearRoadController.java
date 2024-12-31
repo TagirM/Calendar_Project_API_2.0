@@ -1,5 +1,8 @@
+// Класс с контроллером для работы с базой данных автодорог
+
 package ru.tomsknipineft.controllers;
 
+import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -10,15 +13,11 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import ru.tomsknipineft.entities.linearObjects.DataFormLinearObjects;
+import ru.tomsknipineft.entities.TaskSchedule;
 import ru.tomsknipineft.entities.linearObjects.Road;
-import ru.tomsknipineft.entities.oilPad.DataFormOilPad;
-import ru.tomsknipineft.services.CalendarService;
-import ru.tomsknipineft.services.LinearPipelineGroupCalendarServiceImpl;
 import ru.tomsknipineft.services.baseService.RoadCreateDataBaseService;
-import ru.tomsknipineft.services.baseService.util.MppLoader;
+import ru.tomsknipineft.services.entityService.RoadService;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
@@ -26,8 +25,10 @@ import java.util.List;
 @RequiredArgsConstructor
 @RequestMapping("/admin_data_base/linear_object/linear_road")
 public class BaseLinearRoadController {
-//    private final LinearPipelineGroupCalendarServiceImpl linearObjectGroupCalendarService;
+    //    private final LinearPipelineGroupCalendarServiceImpl linearObjectGroupCalendarService;
     private final RoadCreateDataBaseService roadCreateDataBaseService;
+
+    private final RoadService roadService;
 
     private static final Logger logger = LogManager.getLogger(BaseLinearRoadController.class);
 
@@ -35,7 +36,7 @@ public class BaseLinearRoadController {
      * Страница с вводом данных по автомобильной дороге для формирования базы данных
      */
     @GetMapping
-    public String linearRoadInputPage(Model model){
+    public String linearRoadInputPage(Model model) {
         model.addAttribute("dataRoad", new Road());
         return "input_base_page/linear-road-base";
     }
@@ -81,5 +82,33 @@ public class BaseLinearRoadController {
 //        model.addAttribute("engineeringSurveyReport", dataFormOilPad.isEngineeringSurveyReport());
 //        model.addAttribute("mmg", dataFormOilPad.isMmg());
         return "result_base/road-success-base";
+    }
+
+    /**
+     * Вывод веб-страницы с таблицей
+     */
+    @GetMapping("/success_base/table")
+    public String tableFromBase(Model model) {
+        List<Road> roads = roadCreateDataBaseService.dataFromRoadInBase();
+        List<TaskSchedule> tasks = roads.get(0).getTaskMainDesignDepartmentsSchedules();
+        model.addAttribute("roads", roads);
+        model.addAttribute("tasks", tasks);
+        return "result_base/road-table-base";
+    }
+
+    /**
+     * Вывод веб-страницы с графиком
+     */
+    @GetMapping("/success_base/graph")
+    public String graphFromBase() {
+        return "result_base/road-graph-base";
+    }
+
+    /**
+     * Вывод графика на веб-страницу
+     */
+    @GetMapping("/success_base/graph/chart")
+    public void graphFromBaseChart1(HttpServletResponse response) {
+        roadCreateDataBaseService.createGraphFromBase(response);
     }
 }

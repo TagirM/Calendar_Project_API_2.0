@@ -11,6 +11,8 @@ import ru.tomsknipineft.entities.linearObjects.Road;
 import ru.tomsknipineft.repositories.RoadRepository;
 import ru.tomsknipineft.utils.exceptions.NoSuchEntityException;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 @CacheConfig(cacheNames = "roadCache")
@@ -53,6 +55,15 @@ public class RoadService implements EntityProjectService {
                 .orElseThrow(()->
                 new NoSuchEntityException("Автомобильная дорога в базе данных отсутствует"));
     }
+
+    /**
+     * Получение всех сущностей (автодорог) из БД
+     * @return список сущностей (автодорог)
+     */
+    public List<Road> getAll(){
+        return roadRepository.findAll();
+    }
+
 
     /**
      * Метод очистки кэша после отработки данного класса и сохранения ресурсов для последующей проработки календаря проекта

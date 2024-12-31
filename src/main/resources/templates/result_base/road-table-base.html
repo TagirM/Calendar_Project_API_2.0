@@ -1,0 +1,42 @@
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorate="~{blocks/template.html}">
+<th:block layout:fragment="alert-content">
+    <div class="card text-center">
+        <h2 class="text-primary">МОДУЛЬ "АДМИНИСТРИРОВАНИЕ БАЗЫ ДАННЫХ"</h2>
+        <br>
+        <table style="vertical-align: top;" th:border="1" th:width="700"
+               class="table table-hover table-light text-center">
+            <thead>
+            <tr>
+                <th>Наименование сооружения</th>
+                <th>Протяженность, км</th>
+                <th>Количество</th>
+                <th th:each="task : ${tasks}" th:text="${task.taskName}"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="road : ${roads}">
+                <td th:text="${road.name}"></td>
+                <td th:text="${road.length}"></td>
+                <td th:text="${road.count}"></td>
+                <td th:each="task : ${road.taskMainDesignDepartmentsSchedules}" th:text="${task.taskDuration}"></td>
+            </tr>
+            </tbody>
+        </table>
+        <a class="btn btn-outline-secondary" href="/admin_data_base/linear_object/linear_road"><h5>Продолжить загрузку
+            данных по данному объекту</h5></a><br>
+        <a class="btn btn-outline-secondary" href="/admin_data_base/tech_object"><h5>Сформировать полностью базу данных
+            на загруженных данных</h5></a><br>
+        <a class="btn btn-outline-secondary" href="/admin_data_base"><h5>Вернуться в начало модуля</h5></a><br>
+        <a class="btn btn-outline-secondary" href="/admin_data_base/linear_object/linear_road/success_base/graph"><h5>
+            Визуализировать загруженные данные в виде графика</h5></a><br><br><br>
+        <div class="card">
+            <div class="card text-center">
+                <a class="btn btn-outline-secondary fw-bolder " href="../start-page.html" th:href="@{/}">
+                    <h5>Вернуться на начальную страницу</h5></a><br>
+            </div>
+        </div>
+    </div>
+</th:block>
+</html>

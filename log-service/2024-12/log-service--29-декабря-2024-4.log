@@ -1,0 +1,54 @@
+2024-12-29T17:26:55.071+0700 INFO info message
+2024-12-29T17:26:55.073+0700 ERROR info message
+2024-12-29T17:26:55.144+0700 INFO info message
+2024-12-29T17:26:55.144+0700 ERROR info message
+2024-12-29T17:26:55.326+0700 INFO HV000001: Hibernate Validator 8.0.1.Final
+2024-12-29T17:26:55.353+0700 INFO Starting Main using Java 19.0.1 with PID 3172 (E:\MyJob\calendar_api\target\classes started by Тагир in E:\MyJob\calendar_api)
+2024-12-29T17:26:55.356+0700 INFO No active profile set, falling back to 1 default profile: "default"
+2024-12-29T17:26:55.551+0700 INFO Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-29T17:26:55.551+0700 INFO For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-29T17:26:56.028+0700 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-29T17:26:56.086+0700 INFO Finished Spring Data repository scanning in 53 ms. Found 15 JPA repository interfaces.
+2024-12-29T17:26:56.443+0700 INFO Tomcat initialized with port 8080 (http)
+2024-12-29T17:26:56.450+0700 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-29T17:26:56.452+0700 INFO Starting service [Tomcat]
+2024-12-29T17:26:56.452+0700 INFO Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-12-29T17:26:56.489+0700 INFO Initializing Spring embedded WebApplicationContext
+2024-12-29T17:26:56.490+0700 INFO Root WebApplicationContext: initialization completed in 937 ms
+2024-12-29T17:26:56.600+0700 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-29T17:26:56.630+0700 INFO HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-12-29T17:26:56.651+0700 INFO HHH000026: Second-level cache disabled
+2024-12-29T17:26:56.766+0700 INFO No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-29T17:26:56.780+0700 INFO HikariPool-1 - Starting...
+2024-12-29T17:26:56.863+0700 INFO HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3eaba869
+2024-12-29T17:26:56.864+0700 INFO HikariPool-1 - Start completed.
+2024-12-29T17:26:56.884+0700 WARN HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-29T17:26:57.815+0700 INFO HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-29T17:26:57.975+0700 WARN SQL Warning Code: 0, SQLState: 00000
+2024-12-29T17:26:57.975+0700 WARN constraint "uk_ko0jact2fkf2dmwvdi7w5ssnb" of relation "roads_task_additional_design_departments_schedules" does not exist, skipping
+2024-12-29T17:26:57.981+0700 WARN SQL Warning Code: 0, SQLState: 00000
+2024-12-29T17:26:57.982+0700 WARN constraint "uk_b1wokfn1ld37mwq9f8pirsvkg" of relation "roads_task_main_design_departments_schedules" does not exist, skipping
+2024-12-29T17:26:57.987+0700 WARN SQL Warning Code: 0, SQLState: 00000
+2024-12-29T17:26:57.987+0700 WARN constraint "uk_k4xcj3y61oqbqyqefl7obi761" of relation "roads_workload_departments" does not exist, skipping
+2024-12-29T17:26:58.021+0700 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-29T17:26:58.646+0700 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-29T17:26:59.261+0700 INFO LiveReload server is running on port 35729
+2024-12-29T17:26:59.277+0700 INFO Starting ProtocolHandler ["http-nio-8080"]
+2024-12-29T17:26:59.288+0700 INFO Tomcat started on port 8080 (http) with context path ''
+2024-12-29T17:26:59.295+0700 INFO Started Main in 4.149 seconds (process running for 4.882)
+2024-12-29T17:27:18.012+0700 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-29T17:27:18.013+0700 INFO Initializing Servlet 'dispatcherServlet'
+2024-12-29T17:27:18.014+0700 INFO Completed initialization in 0 ms
+2024-12-29T17:27:18.548+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-12-29T17:27:19.216+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-12-29T17:27:19.960+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-12-29T17:27:21.179+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-12-29T17:27:30.675+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-12-29T17:28:41.419+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-12-29T17:28:52.319+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-12-29T17:28:53.614+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-12-29T17:31:53.298+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-12-29T17:31:54.268+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-12-29T17:43:39.467+0700 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-29T17:43:39.470+0700 INFO HikariPool-1 - Shutdown initiated...
+2024-12-29T17:43:39.472+0700 INFO HikariPool-1 - Shutdown completed.
