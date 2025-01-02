@@ -1,0 +1,801 @@
+2025-01-01T16:34:01.338+0700 INFO info message
+2025-01-01T16:34:01.340+0700 ERROR info message
+2025-01-01T16:34:01.515+0700 INFO info message
+2025-01-01T16:34:01.515+0700 ERROR info message
+2025-01-01T16:34:01.888+0700 INFO HV000001: Hibernate Validator 8.0.1.Final
+2025-01-01T16:34:01.936+0700 INFO Starting Main using Java 19.0.1 with PID 2932 (E:\MyJob\calendar_api\target\classes started by Тагир in E:\MyJob\calendar_api)
+2025-01-01T16:34:01.938+0700 INFO No active profile set, falling back to 1 default profile: "default"
+2025-01-01T16:34:02.219+0700 INFO Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-01T16:34:02.219+0700 INFO For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-01T16:34:03.027+0700 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T16:34:03.124+0700 INFO Finished Spring Data repository scanning in 91 ms. Found 15 JPA repository interfaces.
+2025-01-01T16:34:03.669+0700 INFO Tomcat initialized with port 8080 (http)
+2025-01-01T16:34:03.680+0700 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-01T16:34:03.682+0700 INFO Starting service [Tomcat]
+2025-01-01T16:34:03.682+0700 INFO Starting Servlet engine: [Apache Tomcat/10.1.18]
+2025-01-01T16:34:03.741+0700 INFO Initializing Spring embedded WebApplicationContext
+2025-01-01T16:34:03.741+0700 INFO Root WebApplicationContext: initialization completed in 1521 ms
+2025-01-01T16:34:03.865+0700 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T16:34:03.931+0700 INFO HHH000412: Hibernate ORM core version 6.4.1.Final
+2025-01-01T16:34:03.973+0700 INFO HHH000026: Second-level cache disabled
+2025-01-01T16:34:04.145+0700 INFO No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T16:34:04.165+0700 INFO HikariPool-1 - Starting...
+2025-01-01T16:34:04.299+0700 INFO HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@647b3e7e
+2025-01-01T16:34:04.302+0700 INFO HikariPool-1 - Start completed.
+2025-01-01T16:34:04.333+0700 WARN HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-01T16:34:05.558+0700 INFO HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T16:34:05.853+0700 WARN SQL Warning Code: 0, SQLState: 00000
+2025-01-01T16:34:05.854+0700 WARN constraint "uk_ko0jact2fkf2dmwvdi7w5ssnb" of relation "roads_task_additional_design_departments_schedules" does not exist, skipping
+2025-01-01T16:34:05.862+0700 WARN SQL Warning Code: 0, SQLState: 00000
+2025-01-01T16:34:05.862+0700 WARN constraint "uk_b1wokfn1ld37mwq9f8pirsvkg" of relation "roads_task_main_design_departments_schedules" does not exist, skipping
+2025-01-01T16:34:05.869+0700 WARN SQL Warning Code: 0, SQLState: 00000
+2025-01-01T16:34:05.869+0700 WARN constraint "uk_k4xcj3y61oqbqyqefl7obi761" of relation "roads_workload_departments" does not exist, skipping
+2025-01-01T16:34:05.919+0700 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T16:34:06.629+0700 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T16:34:07.387+0700 INFO LiveReload server is running on port 35729
+2025-01-01T16:34:07.402+0700 INFO Starting ProtocolHandler ["http-nio-8080"]
+2025-01-01T16:34:07.414+0700 INFO Tomcat started on port 8080 (http) with context path ''
+2025-01-01T16:34:07.423+0700 INFO Started Main in 5.901 seconds (process running for 7.279)
+2025-01-01T16:34:16.683+0700 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-01T16:34:16.684+0700 INFO Initializing Servlet 'dispatcherServlet'
+2025-01-01T16:34:16.685+0700 INFO Completed initialization in 1 ms
+2025-01-01T16:34:17.554+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:34:25.585+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:34:26.918+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:34:28.063+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:38:10.643+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:38:12.275+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:38:24.987+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:38:26.259+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:38:42.774+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:39:35.304+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:40:35.865+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:40:37.824+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:41:57.241+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:41:58.994+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:42:19.925+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:42:21.720+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:42:48.037+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:42:49.461+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:44:56.382+0700 INFO Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-01-01T16:44:56.387+0700 INFO Stopping ProtocolHandler ["http-nio-8080"]
+2025-01-01T16:44:56.403+0700 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T16:44:56.408+0700 INFO HikariPool-1 - Shutdown initiated...
+2025-01-01T16:44:56.414+0700 INFO HikariPool-1 - Shutdown completed.
+2025-01-01T16:44:56.495+0700 INFO info message
+2025-01-01T16:44:56.496+0700 ERROR info message
+2025-01-01T16:44:56.535+0700 INFO Starting Main using Java 19.0.1 with PID 2932 (E:\MyJob\calendar_api\target\classes started by Тагир in E:\MyJob\calendar_api)
+2025-01-01T16:44:56.536+0700 INFO No active profile set, falling back to 1 default profile: "default"
+2025-01-01T16:44:56.683+0700 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T16:44:56.697+0700 WARN Exception encountered during context initialization - cancelling refresh attempt: java.lang.TypeNotPresentException: Type ru.tomsknipineft.entities.linearObjects.Road not present
+2025-01-01T16:44:56.702+0700 INFO 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-01T16:44:56.717+0700 ERROR Application run failed
+java.lang.TypeNotPresentException: Type ru.tomsknipineft.entities.linearObjects.Road not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117) ~[?:?]
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125) ~[?:?]
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49) ~[?:?]
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68) ~[?:?]
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138) ~[?:?]
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49) ~[?:?]
+	at java.base/sun.reflect.generics.repository.ClassRepository.computeSuperInterfaces(ClassRepository.java:117) ~[?:?]
+	at java.base/sun.reflect.generics.repository.ClassRepository.getSuperInterfaces(ClassRepository.java:95) ~[?:?]
+	at java.base/java.lang.Class.getGenericInterfaces(Class.java:1250) ~[?:?]
+	at org.springframework.core.ResolvableType.getInterfaces(ResolvableType.java:517) ~[spring-core-6.1.3.jar:6.1.3]
+	at org.springframework.core.ResolvableType.as(ResolvableType.java:465) ~[spring-core-6.1.3.jar:6.1.3]
+	at org.springframework.data.util.TypeDiscoverer.getSuperTypeInformation(TypeDiscoverer.java:254) ~[spring-data-commons-3.2.2.jar:3.2.2]
+	at org.springframework.data.util.ClassTypeInformation.getSuperTypeInformation(ClassTypeInformation.java:36) ~[spring-data-commons-3.2.2.jar:3.2.2]
+	at org.springframework.data.util.TypeInformation.getRequiredSuperTypeInformation(TypeInformation.java:327) ~[spring-data-commons-3.2.2.jar:3.2.2]
+	at org.springframework.data.repository.core.support.DefaultRepositoryMetadata.<init>(DefaultRepositoryMetadata.java:55) ~[spring-data-commons-3.2.2.jar:3.2.2]
+	at org.springframework.data.repository.core.support.AbstractRepositoryMetadata.getMetadata(AbstractRepositoryMetadata.java:77) ~[spring-data-commons-3.2.2.jar:3.2.2]
+	at org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport.getRepositoryConfigurations(RepositoryConfigurationExtensionSupport.java:91) ~[spring-data-commons-3.2.2.jar:3.2.2]
+	at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:164) ~[spring-data-commons-3.2.2.jar:3.2.2]
+	at org.springframework.boot.autoconfigure.data.AbstractRepositoryConfigurationSourceSupport.registerBeanDefinitions(AbstractRepositoryConfigurationSourceSupport.java:62) ~[spring-boot-autoconfigure-3.2.2.jar:3.2.2]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:376) ~[spring-context-6.1.3.jar:6.1.3]
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:729) ~[?:?]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:375) ~[spring-context-6.1.3.jar:6.1.3]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148) ~[spring-context-6.1.3.jar:6.1.3]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120) ~[spring-context-6.1.3.jar:6.1.3]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:428) ~[spring-context-6.1.3.jar:6.1.3]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:289) ~[spring-context-6.1.3.jar:6.1.3]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.1.3.jar:6.1.3]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.1.3.jar:6.1.3]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:788) ~[spring-context-6.1.3.jar:6.1.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:606) ~[spring-context-6.1.3.jar:6.1.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) [spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) [spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) [spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) [spring-boot-3.2.2.jar:3.2.2]
+	at ru.tomsknipineft.Main.main(Main.java:20) [classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.2.2.jar:3.2.2]
+Caused by: java.lang.ClassNotFoundException: ru.tomsknipineft.entities.linearObjects.Road
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[?:?]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[?:?]
+	at java.base/java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:495) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:474) ~[?:?]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.2.2.jar:3.2.2]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[?:?]
+	at java.base/java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:495) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:474) ~[?:?]
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114) ~[?:?]
+	... 39 more
+2025-01-01T16:45:00.218+0700 INFO info message
+2025-01-01T16:45:00.218+0700 ERROR info message
+2025-01-01T16:45:00.253+0700 INFO Starting Main using Java 19.0.1 with PID 2932 (E:\MyJob\calendar_api\target\classes started by Тагир in E:\MyJob\calendar_api)
+2025-01-01T16:45:00.253+0700 INFO No active profile set, falling back to 1 default profile: "default"
+2025-01-01T16:45:00.370+0700 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T16:45:00.393+0700 INFO Finished Spring Data repository scanning in 22 ms. Found 15 JPA repository interfaces.
+2025-01-01T16:45:00.492+0700 INFO Tomcat initialized with port 8080 (http)
+2025-01-01T16:45:00.493+0700 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-01T16:45:00.493+0700 INFO Starting service [Tomcat]
+2025-01-01T16:45:00.493+0700 INFO Starting Servlet engine: [Apache Tomcat/10.1.18]
+2025-01-01T16:45:00.513+0700 INFO Initializing Spring embedded WebApplicationContext
+2025-01-01T16:45:00.513+0700 INFO Root WebApplicationContext: initialization completed in 258 ms
+2025-01-01T16:45:00.584+0700 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T16:45:00.586+0700 INFO HHH000026: Second-level cache disabled
+2025-01-01T16:45:00.588+0700 INFO No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T16:45:00.589+0700 INFO HikariPool-2 - Starting...
+2025-01-01T16:45:00.613+0700 INFO HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@723ece03
+2025-01-01T16:45:00.613+0700 INFO HikariPool-2 - Start completed.
+2025-01-01T16:45:00.618+0700 WARN HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-01T16:45:00.898+0700 INFO HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T16:45:01.183+0700 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T16:45:01.545+0700 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T16:45:02.075+0700 INFO LiveReload server is running on port 35729
+2025-01-01T16:45:02.087+0700 INFO Starting ProtocolHandler ["http-nio-8080"]
+2025-01-01T16:45:02.089+0700 INFO Tomcat started on port 8080 (http) with context path ''
+2025-01-01T16:45:02.093+0700 INFO Started Main in 1.872 seconds (process running for 661.949)
+2025-01-01T16:45:02.094+0700 INFO Condition evaluation unchanged
+2025-01-01T16:45:41.544+0700 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-01T16:45:41.544+0700 INFO Initializing Servlet 'dispatcherServlet'
+2025-01-01T16:45:41.546+0700 INFO Completed initialization in 2 ms
+2025-01-01T16:45:42.518+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:45:43.938+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:45:56.974+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:45:58.758+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:46:32.800+0700 WARN Resolved [java.lang.NullPointerException: Cannot invoke "net.sf.mpxj.Resource.getName()" because the return value of "net.sf.mpxj.ResourceAssignment.getResource()" is null]
+2025-01-01T16:46:32.862+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:46:57.631+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:47:40.800+0700 WARN Resolved [java.lang.NullPointerException: Cannot invoke "net.sf.mpxj.Resource.getName()" because the return value of "net.sf.mpxj.ResourceAssignment.getResource()" is null]
+2025-01-01T16:47:40.869+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:47:45.732+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:48:17.782+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:48:20.001+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:48:45.776+0700 WARN Resolved [java.lang.NullPointerException: Cannot invoke "net.sf.mpxj.Resource.getName()" because the return value of "net.sf.mpxj.ResourceAssignment.getResource()" is null]
+2025-01-01T16:48:45.847+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:48:54.214+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:54:00.292+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:54:01.183+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:54:02.635+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:54:03.297+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:54:17.326+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T16:54:19.623+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T17:07:07.859+0700 INFO Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-01-01T17:07:07.861+0700 INFO Stopping ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:07:07.874+0700 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:07:07.875+0700 INFO HikariPool-2 - Shutdown initiated...
+2025-01-01T17:07:07.878+0700 INFO HikariPool-2 - Shutdown completed.
+2025-01-01T17:07:07.952+0700 INFO info message
+2025-01-01T17:07:07.952+0700 ERROR info message
+2025-01-01T17:07:07.990+0700 INFO Starting Main using Java 19.0.1 with PID 2932 (E:\MyJob\calendar_api\target\classes started by Тагир in E:\MyJob\calendar_api)
+2025-01-01T17:07:07.991+0700 INFO No active profile set, falling back to 1 default profile: "default"
+2025-01-01T17:07:08.111+0700 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T17:07:08.135+0700 INFO Finished Spring Data repository scanning in 23 ms. Found 15 JPA repository interfaces.
+2025-01-01T17:07:08.232+0700 INFO Tomcat initialized with port 8080 (http)
+2025-01-01T17:07:08.233+0700 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:07:08.234+0700 INFO Starting service [Tomcat]
+2025-01-01T17:07:08.234+0700 INFO Starting Servlet engine: [Apache Tomcat/10.1.18]
+2025-01-01T17:07:08.250+0700 INFO Initializing Spring embedded WebApplicationContext
+2025-01-01T17:07:08.250+0700 INFO Root WebApplicationContext: initialization completed in 255 ms
+2025-01-01T17:07:08.294+0700 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T17:07:08.296+0700 INFO HHH000026: Second-level cache disabled
+2025-01-01T17:07:08.299+0700 INFO No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T17:07:08.300+0700 INFO HikariPool-3 - Starting...
+2025-01-01T17:07:08.331+0700 INFO HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@72c115dd
+2025-01-01T17:07:08.331+0700 INFO HikariPool-3 - Start completed.
+2025-01-01T17:07:08.338+0700 WARN HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-01T17:07:08.682+0700 INFO HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T17:07:09.082+0700 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:07:09.407+0700 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T17:07:10.069+0700 INFO LiveReload server is running on port 35729
+2025-01-01T17:07:10.078+0700 INFO Starting ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:07:10.081+0700 INFO Tomcat started on port 8080 (http) with context path ''
+2025-01-01T17:07:10.085+0700 INFO Started Main in 2.13 seconds (process running for 1989.942)
+2025-01-01T17:07:10.086+0700 INFO Condition evaluation unchanged
+2025-01-01T17:07:11.501+0700 INFO Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2025-01-01T17:07:11.502+0700 INFO Stopping ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:07:11.511+0700 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:07:11.512+0700 INFO HikariPool-3 - Shutdown initiated...
+2025-01-01T17:07:11.514+0700 INFO HikariPool-3 - Shutdown completed.
+2025-01-01T17:07:11.571+0700 INFO info message
+2025-01-01T17:07:11.572+0700 ERROR info message
+2025-01-01T17:07:11.599+0700 INFO Starting Main using Java 19.0.1 with PID 2932 (E:\MyJob\calendar_api\target\classes started by Тагир in E:\MyJob\calendar_api)
+2025-01-01T17:07:11.599+0700 INFO No active profile set, falling back to 1 default profile: "default"
+2025-01-01T17:07:11.710+0700 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T17:07:11.734+0700 INFO Finished Spring Data repository scanning in 23 ms. Found 15 JPA repository interfaces.
+2025-01-01T17:07:11.811+0700 INFO Tomcat initialized with port 8080 (http)
+2025-01-01T17:07:11.812+0700 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:07:11.812+0700 INFO Starting service [Tomcat]
+2025-01-01T17:07:11.812+0700 INFO Starting Servlet engine: [Apache Tomcat/10.1.18]
+2025-01-01T17:07:11.826+0700 INFO Initializing Spring embedded WebApplicationContext
+2025-01-01T17:07:11.826+0700 INFO Root WebApplicationContext: initialization completed in 226 ms
+2025-01-01T17:07:11.856+0700 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T17:07:11.858+0700 INFO HHH000026: Second-level cache disabled
+2025-01-01T17:07:11.861+0700 INFO No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T17:07:11.862+0700 INFO HikariPool-4 - Starting...
+2025-01-01T17:07:11.891+0700 INFO HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@1a94fc11
+2025-01-01T17:07:11.891+0700 INFO HikariPool-4 - Start completed.
+2025-01-01T17:07:11.896+0700 WARN HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-01T17:07:12.122+0700 INFO HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T17:07:12.410+0700 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:07:12.731+0700 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T17:07:13.254+0700 INFO LiveReload server is running on port 35729
+2025-01-01T17:07:13.261+0700 INFO Starting ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:07:13.263+0700 INFO Tomcat started on port 8080 (http) with context path ''
+2025-01-01T17:07:13.266+0700 INFO Started Main in 1.693 seconds (process running for 1993.123)
+2025-01-01T17:07:13.267+0700 INFO Condition evaluation unchanged
+2025-01-01T17:08:13.076+0700 INFO Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-01-01T17:08:13.078+0700 INFO Stopping ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:08:13.093+0700 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:08:13.093+0700 INFO HikariPool-4 - Shutdown initiated...
+2025-01-01T17:08:13.095+0700 INFO HikariPool-4 - Shutdown completed.
+2025-01-01T17:08:13.171+0700 INFO info message
+2025-01-01T17:08:13.171+0700 ERROR info message
+2025-01-01T17:08:13.209+0700 INFO Starting Main using Java 19.0.1 with PID 2932 (E:\MyJob\calendar_api\target\classes started by Тагир in E:\MyJob\calendar_api)
+2025-01-01T17:08:13.209+0700 INFO No active profile set, falling back to 1 default profile: "default"
+2025-01-01T17:08:13.343+0700 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T17:08:13.367+0700 INFO Finished Spring Data repository scanning in 24 ms. Found 15 JPA repository interfaces.
+2025-01-01T17:08:13.442+0700 INFO Tomcat initialized with port 8080 (http)
+2025-01-01T17:08:13.442+0700 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:08:13.443+0700 INFO Starting service [Tomcat]
+2025-01-01T17:08:13.443+0700 INFO Starting Servlet engine: [Apache Tomcat/10.1.18]
+2025-01-01T17:08:13.456+0700 INFO Initializing Spring embedded WebApplicationContext
+2025-01-01T17:08:13.456+0700 INFO Root WebApplicationContext: initialization completed in 246 ms
+2025-01-01T17:08:13.487+0700 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T17:08:13.489+0700 INFO HHH000026: Second-level cache disabled
+2025-01-01T17:08:13.491+0700 INFO No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T17:08:13.492+0700 INFO HikariPool-5 - Starting...
+2025-01-01T17:08:13.526+0700 INFO HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@b6bc4d3
+2025-01-01T17:08:13.526+0700 INFO HikariPool-5 - Start completed.
+2025-01-01T17:08:13.532+0700 WARN HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-01T17:08:13.778+0700 INFO HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T17:08:14.102+0700 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:08:14.538+0700 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T17:08:15.045+0700 INFO LiveReload server is running on port 35729
+2025-01-01T17:08:15.056+0700 INFO Starting ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:08:15.059+0700 INFO Tomcat started on port 8080 (http) with context path ''
+2025-01-01T17:08:15.064+0700 INFO Started Main in 1.889 seconds (process running for 2054.92)
+2025-01-01T17:08:15.065+0700 INFO Condition evaluation unchanged
+2025-01-01T17:08:16.470+0700 INFO Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-01-01T17:08:16.472+0700 INFO Stopping ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:08:16.485+0700 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:08:16.485+0700 INFO HikariPool-5 - Shutdown initiated...
+2025-01-01T17:08:16.491+0700 INFO HikariPool-5 - Shutdown completed.
+2025-01-01T17:08:16.554+0700 INFO info message
+2025-01-01T17:08:16.554+0700 ERROR info message
+2025-01-01T17:08:16.585+0700 INFO Starting Main using Java 19.0.1 with PID 2932 (E:\MyJob\calendar_api\target\classes started by Тагир in E:\MyJob\calendar_api)
+2025-01-01T17:08:16.585+0700 INFO No active profile set, falling back to 1 default profile: "default"
+2025-01-01T17:08:16.695+0700 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T17:08:16.722+0700 INFO Finished Spring Data repository scanning in 26 ms. Found 15 JPA repository interfaces.
+2025-01-01T17:08:16.796+0700 INFO Tomcat initialized with port 8080 (http)
+2025-01-01T17:08:16.797+0700 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:08:16.797+0700 INFO Starting service [Tomcat]
+2025-01-01T17:08:16.797+0700 INFO Starting Servlet engine: [Apache Tomcat/10.1.18]
+2025-01-01T17:08:16.811+0700 INFO Initializing Spring embedded WebApplicationContext
+2025-01-01T17:08:16.811+0700 INFO Root WebApplicationContext: initialization completed in 225 ms
+2025-01-01T17:08:16.842+0700 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T17:08:16.844+0700 INFO HHH000026: Second-level cache disabled
+2025-01-01T17:08:16.846+0700 INFO No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T17:08:16.847+0700 INFO HikariPool-6 - Starting...
+2025-01-01T17:08:16.872+0700 INFO HikariPool-6 - Added connection org.postgresql.jdbc.PgConnection@540e618a
+2025-01-01T17:08:16.872+0700 INFO HikariPool-6 - Start completed.
+2025-01-01T17:08:16.878+0700 WARN HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-01T17:08:17.120+0700 INFO HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T17:08:17.461+0700 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:08:17.820+0700 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T17:08:18.319+0700 INFO LiveReload server is running on port 35729
+2025-01-01T17:08:18.324+0700 INFO Starting ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:08:18.326+0700 INFO Tomcat started on port 8080 (http) with context path ''
+2025-01-01T17:08:18.328+0700 INFO Started Main in 1.771 seconds (process running for 2058.185)
+2025-01-01T17:08:18.329+0700 INFO Condition evaluation unchanged
+2025-01-01T17:08:56.365+0700 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-01T17:08:56.365+0700 INFO Initializing Servlet 'dispatcherServlet'
+2025-01-01T17:08:56.366+0700 INFO Completed initialization in 1 ms
+2025-01-01T17:08:56.728+0700 WARN Resolved [java.lang.NullPointerException: Cannot invoke "net.sf.mpxj.Resource.getName()" because the return value of "net.sf.mpxj.ResourceAssignment.getResource()" is null]
+2025-01-01T17:08:56.791+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T17:11:02.408+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T17:11:03.019+0700 INFO Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-01-01T17:11:03.021+0700 INFO Stopping ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:11:03.033+0700 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:11:03.033+0700 INFO HikariPool-6 - Shutdown initiated...
+2025-01-01T17:11:03.035+0700 INFO HikariPool-6 - Shutdown completed.
+2025-01-01T17:11:03.105+0700 INFO info message
+2025-01-01T17:11:03.106+0700 ERROR info message
+2025-01-01T17:11:03.136+0700 INFO Starting Main using Java 19.0.1 with PID 2932 (E:\MyJob\calendar_api\target\classes started by Тагир in E:\MyJob\calendar_api)
+2025-01-01T17:11:03.136+0700 INFO No active profile set, falling back to 1 default profile: "default"
+2025-01-01T17:11:03.244+0700 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T17:11:03.266+0700 INFO Finished Spring Data repository scanning in 21 ms. Found 15 JPA repository interfaces.
+2025-01-01T17:11:03.339+0700 INFO Tomcat initialized with port 8080 (http)
+2025-01-01T17:11:03.340+0700 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:11:03.340+0700 INFO Starting service [Tomcat]
+2025-01-01T17:11:03.340+0700 INFO Starting Servlet engine: [Apache Tomcat/10.1.18]
+2025-01-01T17:11:03.353+0700 INFO Initializing Spring embedded WebApplicationContext
+2025-01-01T17:11:03.353+0700 INFO Root WebApplicationContext: initialization completed in 215 ms
+2025-01-01T17:11:03.384+0700 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T17:11:03.387+0700 INFO HHH000026: Second-level cache disabled
+2025-01-01T17:11:03.388+0700 INFO No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T17:11:03.390+0700 INFO HikariPool-7 - Starting...
+2025-01-01T17:11:03.421+0700 INFO HikariPool-7 - Added connection org.postgresql.jdbc.PgConnection@1b2209db
+2025-01-01T17:11:03.421+0700 INFO HikariPool-7 - Start completed.
+2025-01-01T17:11:03.428+0700 WARN HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-01T17:11:03.692+0700 INFO HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T17:11:04.053+0700 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:11:04.423+0700 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T17:11:04.985+0700 INFO LiveReload server is running on port 35729
+2025-01-01T17:11:04.996+0700 INFO Starting ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:11:04.999+0700 INFO Tomcat started on port 8080 (http) with context path ''
+2025-01-01T17:11:05.003+0700 INFO Started Main in 1.895 seconds (process running for 2224.86)
+2025-01-01T17:11:05.004+0700 INFO Condition evaluation unchanged
+2025-01-01T17:11:06.425+0700 INFO Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-01-01T17:11:06.426+0700 INFO Stopping ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:11:06.437+0700 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:11:06.437+0700 INFO HikariPool-7 - Shutdown initiated...
+2025-01-01T17:11:06.440+0700 INFO HikariPool-7 - Shutdown completed.
+2025-01-01T17:11:06.552+0700 INFO info message
+2025-01-01T17:11:06.552+0700 ERROR info message
+2025-01-01T17:11:06.599+0700 INFO Starting Main using Java 19.0.1 with PID 2932 (E:\MyJob\calendar_api\target\classes started by Тагир in E:\MyJob\calendar_api)
+2025-01-01T17:11:06.600+0700 INFO No active profile set, falling back to 1 default profile: "default"
+2025-01-01T17:11:06.814+0700 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T17:11:06.875+0700 INFO Finished Spring Data repository scanning in 61 ms. Found 15 JPA repository interfaces.
+2025-01-01T17:11:07.017+0700 INFO Tomcat initialized with port 8080 (http)
+2025-01-01T17:11:07.018+0700 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:11:07.018+0700 INFO Starting service [Tomcat]
+2025-01-01T17:11:07.019+0700 INFO Starting Servlet engine: [Apache Tomcat/10.1.18]
+2025-01-01T17:11:07.041+0700 INFO Initializing Spring embedded WebApplicationContext
+2025-01-01T17:11:07.041+0700 INFO Root WebApplicationContext: initialization completed in 440 ms
+2025-01-01T17:11:07.089+0700 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T17:11:07.091+0700 INFO HHH000026: Second-level cache disabled
+2025-01-01T17:11:07.095+0700 INFO No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T17:11:07.096+0700 INFO HikariPool-8 - Starting...
+2025-01-01T17:11:07.173+0700 INFO HikariPool-8 - Added connection org.postgresql.jdbc.PgConnection@5bdf5782
+2025-01-01T17:11:07.173+0700 INFO HikariPool-8 - Start completed.
+2025-01-01T17:11:07.183+0700 WARN HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-01T17:11:07.678+0700 INFO HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T17:11:07.884+0700 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:11:08.363+0700 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T17:11:08.874+0700 INFO LiveReload server is running on port 35729
+2025-01-01T17:11:08.887+0700 INFO Starting ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:11:08.890+0700 INFO Tomcat started on port 8080 (http) with context path ''
+2025-01-01T17:11:08.895+0700 INFO Started Main in 2.337 seconds (process running for 2228.752)
+2025-01-01T17:11:08.896+0700 INFO Condition evaluation unchanged
+2025-01-01T17:11:18.039+0700 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-01T17:11:18.039+0700 INFO Initializing Servlet 'dispatcherServlet'
+2025-01-01T17:11:18.040+0700 INFO Completed initialization in 1 ms
+2025-01-01T17:11:18.289+0700 WARN Resolved [java.lang.NullPointerException: Cannot invoke "net.sf.mpxj.Resource.getName()" because the return value of "net.sf.mpxj.ResourceAssignment.getResource()" is null]
+2025-01-01T17:11:18.348+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T17:17:53.897+0700 INFO Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-01-01T17:17:53.899+0700 INFO Stopping ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:17:53.909+0700 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:17:53.910+0700 INFO HikariPool-8 - Shutdown initiated...
+2025-01-01T17:17:53.914+0700 INFO HikariPool-8 - Shutdown completed.
+2025-01-01T17:17:54.007+0700 INFO info message
+2025-01-01T17:17:54.007+0700 ERROR info message
+2025-01-01T17:17:54.042+0700 INFO Starting Main using Java 19.0.1 with PID 2932 (E:\MyJob\calendar_api\target\classes started by Тагир in E:\MyJob\calendar_api)
+2025-01-01T17:17:54.043+0700 INFO No active profile set, falling back to 1 default profile: "default"
+2025-01-01T17:17:54.183+0700 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T17:17:54.205+0700 INFO Finished Spring Data repository scanning in 22 ms. Found 15 JPA repository interfaces.
+2025-01-01T17:17:54.287+0700 INFO Tomcat initialized with port 8080 (http)
+2025-01-01T17:17:54.289+0700 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:17:54.289+0700 INFO Starting service [Tomcat]
+2025-01-01T17:17:54.289+0700 INFO Starting Servlet engine: [Apache Tomcat/10.1.18]
+2025-01-01T17:17:54.302+0700 INFO Initializing Spring embedded WebApplicationContext
+2025-01-01T17:17:54.302+0700 INFO Root WebApplicationContext: initialization completed in 255 ms
+2025-01-01T17:17:54.339+0700 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T17:17:54.343+0700 INFO HHH000026: Second-level cache disabled
+2025-01-01T17:17:54.347+0700 INFO No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T17:17:54.348+0700 INFO HikariPool-9 - Starting...
+2025-01-01T17:17:54.383+0700 INFO HikariPool-9 - Added connection org.postgresql.jdbc.PgConnection@269cfa84
+2025-01-01T17:17:54.383+0700 INFO HikariPool-9 - Start completed.
+2025-01-01T17:17:54.390+0700 WARN HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-01T17:17:54.617+0700 INFO HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T17:17:54.942+0700 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:17:55.313+0700 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T17:17:55.833+0700 INFO LiveReload server is running on port 35729
+2025-01-01T17:17:55.846+0700 INFO Starting ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:17:55.849+0700 INFO Tomcat started on port 8080 (http) with context path ''
+2025-01-01T17:17:55.854+0700 INFO Started Main in 1.845 seconds (process running for 2635.711)
+2025-01-01T17:17:55.855+0700 INFO Condition evaluation unchanged
+2025-01-01T17:17:57.283+0700 INFO Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-01-01T17:17:57.284+0700 INFO Stopping ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:17:57.291+0700 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:17:57.292+0700 INFO HikariPool-9 - Shutdown initiated...
+2025-01-01T17:17:57.295+0700 INFO HikariPool-9 - Shutdown completed.
+2025-01-01T17:17:57.413+0700 INFO info message
+2025-01-01T17:17:57.413+0700 ERROR info message
+2025-01-01T17:17:57.434+0700 INFO Starting Main using Java 19.0.1 with PID 2932 (E:\MyJob\calendar_api\target\classes started by Тагир in E:\MyJob\calendar_api)
+2025-01-01T17:17:57.435+0700 INFO No active profile set, falling back to 1 default profile: "default"
+2025-01-01T17:17:57.521+0700 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T17:17:57.537+0700 INFO Finished Spring Data repository scanning in 16 ms. Found 15 JPA repository interfaces.
+2025-01-01T17:17:57.605+0700 INFO Tomcat initialized with port 8080 (http)
+2025-01-01T17:17:57.606+0700 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:17:57.606+0700 INFO Starting service [Tomcat]
+2025-01-01T17:17:57.606+0700 INFO Starting Servlet engine: [Apache Tomcat/10.1.18]
+2025-01-01T17:17:57.621+0700 INFO Initializing Spring embedded WebApplicationContext
+2025-01-01T17:17:57.622+0700 INFO Root WebApplicationContext: initialization completed in 187 ms
+2025-01-01T17:17:57.652+0700 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T17:17:57.653+0700 INFO HHH000026: Second-level cache disabled
+2025-01-01T17:17:57.656+0700 INFO No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T17:17:57.656+0700 INFO HikariPool-10 - Starting...
+2025-01-01T17:17:57.683+0700 INFO HikariPool-10 - Added connection org.postgresql.jdbc.PgConnection@2b37f665
+2025-01-01T17:17:57.683+0700 INFO HikariPool-10 - Start completed.
+2025-01-01T17:17:57.689+0700 WARN HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-01T17:17:57.878+0700 INFO HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T17:17:58.136+0700 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:17:58.402+0700 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T17:17:58.793+0700 INFO LiveReload server is running on port 35729
+2025-01-01T17:17:58.807+0700 INFO Starting ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:17:58.810+0700 INFO Tomcat started on port 8080 (http) with context path ''
+2025-01-01T17:17:58.816+0700 INFO Started Main in 1.402 seconds (process running for 2638.673)
+2025-01-01T17:17:58.817+0700 INFO Condition evaluation unchanged
+2025-01-01T17:18:01.766+0700 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-01T17:18:01.766+0700 INFO Initializing Servlet 'dispatcherServlet'
+2025-01-01T17:18:01.767+0700 INFO Completed initialization in 1 ms
+2025-01-01T17:18:01.804+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T17:18:08.716+0700 WARN Resolved [ru.tomsknipineft.utils.exceptions.NoResourceException: У задачи Задание на пересечение с трубопроводами не задан ресурс.]
+2025-01-01T17:18:08.746+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T17:21:02.257+0700 INFO Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-01-01T17:21:02.258+0700 INFO Stopping ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:21:02.268+0700 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:21:02.269+0700 INFO HikariPool-10 - Shutdown initiated...
+2025-01-01T17:21:02.270+0700 INFO HikariPool-10 - Shutdown completed.
+2025-01-01T17:21:02.387+0700 INFO info message
+2025-01-01T17:21:02.387+0700 ERROR info message
+2025-01-01T17:21:02.416+0700 INFO Starting Main using Java 19.0.1 with PID 2932 (E:\MyJob\calendar_api\target\classes started by Тагир in E:\MyJob\calendar_api)
+2025-01-01T17:21:02.416+0700 INFO No active profile set, falling back to 1 default profile: "default"
+2025-01-01T17:21:02.610+0700 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T17:21:02.645+0700 INFO Finished Spring Data repository scanning in 34 ms. Found 15 JPA repository interfaces.
+2025-01-01T17:21:02.767+0700 INFO Tomcat initialized with port 8080 (http)
+2025-01-01T17:21:02.768+0700 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:21:02.769+0700 INFO Starting service [Tomcat]
+2025-01-01T17:21:02.769+0700 INFO Starting Servlet engine: [Apache Tomcat/10.1.18]
+2025-01-01T17:21:02.787+0700 INFO Initializing Spring embedded WebApplicationContext
+2025-01-01T17:21:02.787+0700 INFO Root WebApplicationContext: initialization completed in 368 ms
+2025-01-01T17:21:02.836+0700 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T17:21:02.839+0700 INFO HHH000026: Second-level cache disabled
+2025-01-01T17:21:02.843+0700 INFO No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T17:21:02.844+0700 INFO HikariPool-11 - Starting...
+2025-01-01T17:21:02.883+0700 INFO HikariPool-11 - Added connection org.postgresql.jdbc.PgConnection@4eba9a1e
+2025-01-01T17:21:02.883+0700 INFO HikariPool-11 - Start completed.
+2025-01-01T17:21:02.891+0700 WARN HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-01T17:21:03.176+0700 INFO HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T17:21:03.434+0700 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:21:03.766+0700 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T17:21:04.323+0700 INFO LiveReload server is running on port 35729
+2025-01-01T17:21:04.337+0700 INFO Starting ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:21:04.340+0700 INFO Tomcat started on port 8080 (http) with context path ''
+2025-01-01T17:21:04.347+0700 INFO Started Main in 1.958 seconds (process running for 2824.204)
+2025-01-01T17:21:04.348+0700 INFO Condition evaluation unchanged
+2025-01-01T17:22:46.557+0700 INFO Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-01-01T17:22:46.559+0700 INFO Stopping ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:22:46.574+0700 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:22:46.575+0700 INFO HikariPool-11 - Shutdown initiated...
+2025-01-01T17:22:46.580+0700 INFO HikariPool-11 - Shutdown completed.
+2025-01-01T17:22:46.680+0700 INFO info message
+2025-01-01T17:22:46.680+0700 ERROR info message
+2025-01-01T17:22:46.726+0700 INFO Starting Main using Java 19.0.1 with PID 2932 (E:\MyJob\calendar_api\target\classes started by Тагир in E:\MyJob\calendar_api)
+2025-01-01T17:22:46.727+0700 INFO No active profile set, falling back to 1 default profile: "default"
+2025-01-01T17:22:46.972+0700 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T17:22:47.016+0700 INFO Finished Spring Data repository scanning in 43 ms. Found 15 JPA repository interfaces.
+2025-01-01T17:22:47.147+0700 INFO Tomcat initialized with port 8080 (http)
+2025-01-01T17:22:47.148+0700 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:22:47.148+0700 INFO Starting service [Tomcat]
+2025-01-01T17:22:47.148+0700 INFO Starting Servlet engine: [Apache Tomcat/10.1.18]
+2025-01-01T17:22:47.172+0700 INFO Initializing Spring embedded WebApplicationContext
+2025-01-01T17:22:47.172+0700 INFO Root WebApplicationContext: initialization completed in 443 ms
+2025-01-01T17:22:47.233+0700 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T17:22:47.235+0700 INFO HHH000026: Second-level cache disabled
+2025-01-01T17:22:47.240+0700 INFO No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T17:22:47.241+0700 INFO HikariPool-12 - Starting...
+2025-01-01T17:22:47.278+0700 INFO HikariPool-12 - Added connection org.postgresql.jdbc.PgConnection@28a5d3db
+2025-01-01T17:22:47.278+0700 INFO HikariPool-12 - Start completed.
+2025-01-01T17:22:47.284+0700 WARN HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-01T17:22:47.711+0700 INFO HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T17:22:47.922+0700 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:22:48.350+0700 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T17:22:48.867+0700 INFO LiveReload server is running on port 35729
+2025-01-01T17:22:48.877+0700 INFO Starting ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:22:48.880+0700 INFO Tomcat started on port 8080 (http) with context path ''
+2025-01-01T17:22:48.884+0700 INFO Started Main in 2.201 seconds (process running for 2928.741)
+2025-01-01T17:22:48.885+0700 INFO Condition evaluation unchanged
+2025-01-01T17:23:34.537+0700 INFO Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-01-01T17:23:34.539+0700 INFO Stopping ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:23:34.549+0700 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:23:34.550+0700 INFO HikariPool-12 - Shutdown initiated...
+2025-01-01T17:23:34.552+0700 INFO HikariPool-12 - Shutdown completed.
+2025-01-01T17:23:34.627+0700 INFO info message
+2025-01-01T17:23:34.627+0700 ERROR info message
+2025-01-01T17:23:34.663+0700 INFO Starting Main using Java 19.0.1 with PID 2932 (E:\MyJob\calendar_api\target\classes started by Тагир in E:\MyJob\calendar_api)
+2025-01-01T17:23:34.663+0700 INFO No active profile set, falling back to 1 default profile: "default"
+2025-01-01T17:23:34.769+0700 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T17:23:34.792+0700 INFO Finished Spring Data repository scanning in 22 ms. Found 15 JPA repository interfaces.
+2025-01-01T17:23:34.853+0700 INFO Tomcat initialized with port 8080 (http)
+2025-01-01T17:23:34.853+0700 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:23:34.854+0700 INFO Starting service [Tomcat]
+2025-01-01T17:23:34.854+0700 INFO Starting Servlet engine: [Apache Tomcat/10.1.18]
+2025-01-01T17:23:34.866+0700 INFO Initializing Spring embedded WebApplicationContext
+2025-01-01T17:23:34.867+0700 INFO Root WebApplicationContext: initialization completed in 203 ms
+2025-01-01T17:23:34.897+0700 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T17:23:34.898+0700 INFO HHH000026: Second-level cache disabled
+2025-01-01T17:23:34.901+0700 INFO No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T17:23:34.901+0700 INFO HikariPool-13 - Starting...
+2025-01-01T17:23:34.935+0700 INFO HikariPool-13 - Added connection org.postgresql.jdbc.PgConnection@24121c07
+2025-01-01T17:23:34.935+0700 INFO HikariPool-13 - Start completed.
+2025-01-01T17:23:34.942+0700 WARN HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-01T17:23:35.201+0700 INFO HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T17:23:35.520+0700 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:23:35.879+0700 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T17:23:36.583+0700 INFO LiveReload server is running on port 35729
+2025-01-01T17:23:36.595+0700 INFO Starting ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:23:36.598+0700 INFO Tomcat started on port 8080 (http) with context path ''
+2025-01-01T17:23:36.603+0700 INFO Started Main in 1.97 seconds (process running for 2976.459)
+2025-01-01T17:23:36.604+0700 INFO Condition evaluation unchanged
+2025-01-01T17:23:38.010+0700 INFO Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-01-01T17:23:38.011+0700 INFO Stopping ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:23:38.026+0700 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:23:38.027+0700 INFO HikariPool-13 - Shutdown initiated...
+2025-01-01T17:23:38.028+0700 INFO HikariPool-13 - Shutdown completed.
+2025-01-01T17:23:38.128+0700 INFO info message
+2025-01-01T17:23:38.128+0700 ERROR info message
+2025-01-01T17:23:38.155+0700 INFO Starting Main using Java 19.0.1 with PID 2932 (E:\MyJob\calendar_api\target\classes started by Тагир in E:\MyJob\calendar_api)
+2025-01-01T17:23:38.155+0700 INFO No active profile set, falling back to 1 default profile: "default"
+2025-01-01T17:23:38.271+0700 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T17:23:38.293+0700 INFO Finished Spring Data repository scanning in 22 ms. Found 15 JPA repository interfaces.
+2025-01-01T17:23:38.370+0700 INFO Tomcat initialized with port 8080 (http)
+2025-01-01T17:23:38.371+0700 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:23:38.371+0700 INFO Starting service [Tomcat]
+2025-01-01T17:23:38.371+0700 INFO Starting Servlet engine: [Apache Tomcat/10.1.18]
+2025-01-01T17:23:38.386+0700 INFO Initializing Spring embedded WebApplicationContext
+2025-01-01T17:23:38.386+0700 INFO Root WebApplicationContext: initialization completed in 230 ms
+2025-01-01T17:23:38.418+0700 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T17:23:38.420+0700 INFO HHH000026: Second-level cache disabled
+2025-01-01T17:23:38.422+0700 INFO No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T17:23:38.423+0700 INFO HikariPool-14 - Starting...
+2025-01-01T17:23:38.446+0700 INFO HikariPool-14 - Added connection org.postgresql.jdbc.PgConnection@23aea4bc
+2025-01-01T17:23:38.446+0700 INFO HikariPool-14 - Start completed.
+2025-01-01T17:23:38.451+0700 WARN HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-01T17:23:38.735+0700 INFO HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T17:23:39.047+0700 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:23:39.327+0700 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T17:23:39.890+0700 INFO LiveReload server is running on port 35729
+2025-01-01T17:23:39.896+0700 INFO Starting ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:23:39.898+0700 INFO Tomcat started on port 8080 (http) with context path ''
+2025-01-01T17:23:39.901+0700 INFO Started Main in 1.768 seconds (process running for 2979.757)
+2025-01-01T17:23:39.901+0700 INFO Condition evaluation unchanged
+2025-01-01T17:23:41.816+0700 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-01T17:23:41.816+0700 INFO Initializing Servlet 'dispatcherServlet'
+2025-01-01T17:23:41.816+0700 INFO Completed initialization in 0 ms
+2025-01-01T17:23:41.850+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T17:23:47.754+0700 WARN Resolved [ru.tomsknipineft.utils.exceptions.NoResourceException: У задачи "Задание на пересечение с трубопроводами" не задан ресурс.]
+2025-01-01T17:23:47.780+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T17:24:20.398+0700 INFO Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-01-01T17:24:20.399+0700 INFO Stopping ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:24:20.412+0700 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:24:20.413+0700 INFO HikariPool-14 - Shutdown initiated...
+2025-01-01T17:24:20.419+0700 INFO HikariPool-14 - Shutdown completed.
+2025-01-01T17:24:20.509+0700 INFO info message
+2025-01-01T17:24:20.509+0700 ERROR info message
+2025-01-01T17:24:20.546+0700 INFO Starting Main using Java 19.0.1 with PID 2932 (E:\MyJob\calendar_api\target\classes started by Тагир in E:\MyJob\calendar_api)
+2025-01-01T17:24:20.546+0700 INFO No active profile set, falling back to 1 default profile: "default"
+2025-01-01T17:24:20.659+0700 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T17:24:20.681+0700 INFO Finished Spring Data repository scanning in 23 ms. Found 15 JPA repository interfaces.
+2025-01-01T17:24:20.747+0700 INFO Tomcat initialized with port 8080 (http)
+2025-01-01T17:24:20.748+0700 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:24:20.748+0700 INFO Starting service [Tomcat]
+2025-01-01T17:24:20.748+0700 INFO Starting Servlet engine: [Apache Tomcat/10.1.18]
+2025-01-01T17:24:20.763+0700 INFO Initializing Spring embedded WebApplicationContext
+2025-01-01T17:24:20.763+0700 INFO Root WebApplicationContext: initialization completed in 216 ms
+2025-01-01T17:24:20.793+0700 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T17:24:20.795+0700 INFO HHH000026: Second-level cache disabled
+2025-01-01T17:24:20.797+0700 INFO No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T17:24:20.798+0700 INFO HikariPool-15 - Starting...
+2025-01-01T17:24:20.829+0700 INFO HikariPool-15 - Added connection org.postgresql.jdbc.PgConnection@5f7e0834
+2025-01-01T17:24:20.829+0700 INFO HikariPool-15 - Start completed.
+2025-01-01T17:24:20.835+0700 WARN HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-01T17:24:21.069+0700 INFO HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T17:24:21.387+0700 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:24:21.724+0700 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T17:24:22.236+0700 INFO LiveReload server is running on port 35729
+2025-01-01T17:24:22.247+0700 INFO Starting ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:24:22.249+0700 INFO Tomcat started on port 8080 (http) with context path ''
+2025-01-01T17:24:22.254+0700 INFO Started Main in 1.739 seconds (process running for 3022.111)
+2025-01-01T17:24:22.256+0700 INFO Condition evaluation unchanged
+2025-01-01T17:24:23.684+0700 INFO Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-01-01T17:24:23.685+0700 INFO Stopping ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:24:23.692+0700 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:24:23.692+0700 INFO HikariPool-15 - Shutdown initiated...
+2025-01-01T17:24:23.695+0700 INFO HikariPool-15 - Shutdown completed.
+2025-01-01T17:24:23.815+0700 INFO info message
+2025-01-01T17:24:23.815+0700 ERROR info message
+2025-01-01T17:24:23.854+0700 INFO Starting Main using Java 19.0.1 with PID 2932 (E:\MyJob\calendar_api\target\classes started by Тагир in E:\MyJob\calendar_api)
+2025-01-01T17:24:23.855+0700 INFO No active profile set, falling back to 1 default profile: "default"
+2025-01-01T17:24:24.059+0700 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T17:24:24.100+0700 INFO Finished Spring Data repository scanning in 41 ms. Found 15 JPA repository interfaces.
+2025-01-01T17:24:24.234+0700 INFO Tomcat initialized with port 8080 (http)
+2025-01-01T17:24:24.235+0700 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:24:24.235+0700 INFO Starting service [Tomcat]
+2025-01-01T17:24:24.236+0700 INFO Starting Servlet engine: [Apache Tomcat/10.1.18]
+2025-01-01T17:24:24.258+0700 INFO Initializing Spring embedded WebApplicationContext
+2025-01-01T17:24:24.259+0700 INFO Root WebApplicationContext: initialization completed in 403 ms
+2025-01-01T17:24:24.314+0700 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T17:24:24.316+0700 INFO HHH000026: Second-level cache disabled
+2025-01-01T17:24:24.321+0700 INFO No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T17:24:24.321+0700 INFO HikariPool-16 - Starting...
+2025-01-01T17:24:24.355+0700 INFO HikariPool-16 - Added connection org.postgresql.jdbc.PgConnection@457008f0
+2025-01-01T17:24:24.355+0700 INFO HikariPool-16 - Start completed.
+2025-01-01T17:24:24.361+0700 WARN HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-01T17:24:24.799+0700 INFO HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T17:24:25.050+0700 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:24:25.529+0700 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T17:24:26.044+0700 INFO LiveReload server is running on port 35729
+2025-01-01T17:24:26.055+0700 INFO Starting ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:24:26.058+0700 INFO Tomcat started on port 8080 (http) with context path ''
+2025-01-01T17:24:26.062+0700 INFO Started Main in 2.242 seconds (process running for 3025.919)
+2025-01-01T17:24:26.063+0700 INFO Condition evaluation unchanged
+2025-01-01T17:24:41.393+0700 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-01T17:24:41.393+0700 INFO Initializing Servlet 'dispatcherServlet'
+2025-01-01T17:24:41.395+0700 INFO Completed initialization in 2 ms
+2025-01-01T17:24:41.424+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T17:24:43.421+0700 WARN Resolved [ru.tomsknipineft.utils.exceptions.NoResourceException: У задачи \"Задание на пересечение с трубопроводами\" не задан ресурс.]
+2025-01-01T17:24:43.446+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T17:25:21.115+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T17:25:22.994+0700 INFO Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-01-01T17:25:22.996+0700 INFO Stopping ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:25:23.011+0700 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:25:23.011+0700 INFO HikariPool-16 - Shutdown initiated...
+2025-01-01T17:25:23.016+0700 INFO HikariPool-16 - Shutdown completed.
+2025-01-01T17:25:23.109+0700 INFO info message
+2025-01-01T17:25:23.109+0700 ERROR info message
+2025-01-01T17:25:23.147+0700 INFO Starting Main using Java 19.0.1 with PID 2932 (E:\MyJob\calendar_api\target\classes started by Тагир in E:\MyJob\calendar_api)
+2025-01-01T17:25:23.147+0700 INFO No active profile set, falling back to 1 default profile: "default"
+2025-01-01T17:25:23.281+0700 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T17:25:23.311+0700 INFO Finished Spring Data repository scanning in 29 ms. Found 15 JPA repository interfaces.
+2025-01-01T17:25:23.395+0700 INFO Tomcat initialized with port 8080 (http)
+2025-01-01T17:25:23.396+0700 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:25:23.397+0700 INFO Starting service [Tomcat]
+2025-01-01T17:25:23.397+0700 INFO Starting Servlet engine: [Apache Tomcat/10.1.18]
+2025-01-01T17:25:23.413+0700 INFO Initializing Spring embedded WebApplicationContext
+2025-01-01T17:25:23.413+0700 INFO Root WebApplicationContext: initialization completed in 265 ms
+2025-01-01T17:25:23.455+0700 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T17:25:23.457+0700 INFO HHH000026: Second-level cache disabled
+2025-01-01T17:25:23.460+0700 INFO No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T17:25:23.460+0700 INFO HikariPool-17 - Starting...
+2025-01-01T17:25:23.493+0700 INFO HikariPool-17 - Added connection org.postgresql.jdbc.PgConnection@38e744db
+2025-01-01T17:25:23.493+0700 INFO HikariPool-17 - Start completed.
+2025-01-01T17:25:23.499+0700 WARN HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-01T17:25:23.746+0700 INFO HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T17:25:24.141+0700 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:25:24.538+0700 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T17:25:25.196+0700 INFO LiveReload server is running on port 35729
+2025-01-01T17:25:25.208+0700 INFO Starting ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:25:25.211+0700 INFO Tomcat started on port 8080 (http) with context path ''
+2025-01-01T17:25:25.216+0700 INFO Started Main in 2.102 seconds (process running for 3085.073)
+2025-01-01T17:25:25.217+0700 INFO Condition evaluation unchanged
+2025-01-01T17:25:26.626+0700 INFO Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-01-01T17:25:26.627+0700 INFO Stopping ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:25:26.635+0700 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:25:26.635+0700 INFO HikariPool-17 - Shutdown initiated...
+2025-01-01T17:25:26.638+0700 INFO HikariPool-17 - Shutdown completed.
+2025-01-01T17:25:26.733+0700 INFO info message
+2025-01-01T17:25:26.733+0700 ERROR info message
+2025-01-01T17:25:26.759+0700 INFO Starting Main using Java 19.0.1 with PID 2932 (E:\MyJob\calendar_api\target\classes started by Тагир in E:\MyJob\calendar_api)
+2025-01-01T17:25:26.761+0700 INFO No active profile set, falling back to 1 default profile: "default"
+2025-01-01T17:25:26.874+0700 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T17:25:26.898+0700 INFO Finished Spring Data repository scanning in 23 ms. Found 15 JPA repository interfaces.
+2025-01-01T17:25:26.967+0700 INFO Tomcat initialized with port 8080 (http)
+2025-01-01T17:25:26.968+0700 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:25:26.968+0700 INFO Starting service [Tomcat]
+2025-01-01T17:25:26.968+0700 INFO Starting Servlet engine: [Apache Tomcat/10.1.18]
+2025-01-01T17:25:26.983+0700 INFO Initializing Spring embedded WebApplicationContext
+2025-01-01T17:25:26.983+0700 INFO Root WebApplicationContext: initialization completed in 221 ms
+2025-01-01T17:25:27.014+0700 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T17:25:27.016+0700 INFO HHH000026: Second-level cache disabled
+2025-01-01T17:25:27.018+0700 INFO No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T17:25:27.019+0700 INFO HikariPool-18 - Starting...
+2025-01-01T17:25:27.046+0700 INFO HikariPool-18 - Added connection org.postgresql.jdbc.PgConnection@26778a63
+2025-01-01T17:25:27.046+0700 INFO HikariPool-18 - Start completed.
+2025-01-01T17:25:27.052+0700 WARN HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-01T17:25:27.237+0700 INFO HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T17:25:27.491+0700 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:25:27.829+0700 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T17:25:28.410+0700 INFO LiveReload server is running on port 35729
+2025-01-01T17:25:28.417+0700 INFO Starting ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:25:28.419+0700 INFO Tomcat started on port 8080 (http) with context path ''
+2025-01-01T17:25:28.422+0700 INFO Started Main in 1.686 seconds (process running for 3088.279)
+2025-01-01T17:25:28.423+0700 INFO Condition evaluation unchanged
+2025-01-01T17:25:29.043+0700 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-01T17:25:29.043+0700 INFO Initializing Servlet 'dispatcherServlet'
+2025-01-01T17:25:29.045+0700 INFO Completed initialization in 2 ms
+2025-01-01T17:25:29.312+0700 WARN Resolved [ru.tomsknipineft.utils.exceptions.NoResourceException: У задачи 'Задание на пересечение с трубопроводами' не задан ресурс.]
+2025-01-01T17:25:29.335+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T17:25:33.587+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T17:34:19.323+0700 INFO Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2025-01-01T17:34:19.325+0700 INFO Stopping ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:34:19.337+0700 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:34:19.337+0700 INFO HikariPool-18 - Shutdown initiated...
+2025-01-01T17:34:19.339+0700 INFO HikariPool-18 - Shutdown completed.
+2025-01-01T17:34:19.422+0700 INFO info message
+2025-01-01T17:34:19.422+0700 ERROR info message
+2025-01-01T17:34:19.448+0700 INFO Starting Main using Java 19.0.1 with PID 2932 (E:\MyJob\calendar_api\target\classes started by Тагир in E:\MyJob\calendar_api)
+2025-01-01T17:34:19.448+0700 INFO No active profile set, falling back to 1 default profile: "default"
+2025-01-01T17:34:19.577+0700 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T17:34:19.600+0700 INFO Finished Spring Data repository scanning in 22 ms. Found 15 JPA repository interfaces.
+2025-01-01T17:34:19.692+0700 INFO Tomcat initialized with port 8080 (http)
+2025-01-01T17:34:19.694+0700 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:34:19.694+0700 INFO Starting service [Tomcat]
+2025-01-01T17:34:19.694+0700 INFO Starting Servlet engine: [Apache Tomcat/10.1.18]
+2025-01-01T17:34:19.709+0700 INFO Initializing Spring embedded WebApplicationContext
+2025-01-01T17:34:19.710+0700 INFO Root WebApplicationContext: initialization completed in 259 ms
+2025-01-01T17:34:19.746+0700 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T17:34:19.748+0700 INFO HHH000026: Second-level cache disabled
+2025-01-01T17:34:19.751+0700 INFO No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T17:34:19.752+0700 INFO HikariPool-19 - Starting...
+2025-01-01T17:34:19.787+0700 INFO HikariPool-19 - Added connection org.postgresql.jdbc.PgConnection@2ea8b8f1
+2025-01-01T17:34:19.787+0700 INFO HikariPool-19 - Start completed.
+2025-01-01T17:34:19.795+0700 WARN HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-01T17:34:20.050+0700 INFO HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T17:34:20.310+0700 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:34:20.697+0700 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T17:34:21.319+0700 INFO LiveReload server is running on port 35729
+2025-01-01T17:34:21.330+0700 INFO Starting ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:34:21.333+0700 INFO Tomcat started on port 8080 (http) with context path ''
+2025-01-01T17:34:21.337+0700 INFO Started Main in 1.913 seconds (process running for 3621.194)
+2025-01-01T17:34:21.338+0700 INFO Condition evaluation unchanged
+2025-01-01T17:34:22.755+0700 INFO Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2025-01-01T17:34:22.756+0700 INFO Stopping ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:34:22.767+0700 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:34:22.768+0700 INFO HikariPool-19 - Shutdown initiated...
+2025-01-01T17:34:22.772+0700 INFO HikariPool-19 - Shutdown completed.
+2025-01-01T17:34:22.852+0700 INFO info message
+2025-01-01T17:34:22.852+0700 ERROR info message
+2025-01-01T17:34:22.877+0700 INFO Starting Main using Java 19.0.1 with PID 2932 (E:\MyJob\calendar_api\target\classes started by Тагир in E:\MyJob\calendar_api)
+2025-01-01T17:34:22.877+0700 INFO No active profile set, falling back to 1 default profile: "default"
+2025-01-01T17:34:22.980+0700 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-01T17:34:22.996+0700 INFO Finished Spring Data repository scanning in 15 ms. Found 15 JPA repository interfaces.
+2025-01-01T17:34:23.072+0700 INFO Tomcat initialized with port 8080 (http)
+2025-01-01T17:34:23.073+0700 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:34:23.073+0700 INFO Starting service [Tomcat]
+2025-01-01T17:34:23.073+0700 INFO Starting Servlet engine: [Apache Tomcat/10.1.18]
+2025-01-01T17:34:23.090+0700 INFO Initializing Spring embedded WebApplicationContext
+2025-01-01T17:34:23.090+0700 INFO Root WebApplicationContext: initialization completed in 212 ms
+2025-01-01T17:34:23.118+0700 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-01T17:34:23.119+0700 INFO HHH000026: Second-level cache disabled
+2025-01-01T17:34:23.121+0700 INFO No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-01T17:34:23.121+0700 INFO HikariPool-20 - Starting...
+2025-01-01T17:34:23.141+0700 INFO HikariPool-20 - Added connection org.postgresql.jdbc.PgConnection@69938b7e
+2025-01-01T17:34:23.141+0700 INFO HikariPool-20 - Start completed.
+2025-01-01T17:34:23.145+0700 WARN HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-01T17:34:23.353+0700 INFO HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-01T17:34:23.598+0700 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:34:23.871+0700 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-01T17:34:24.285+0700 INFO LiveReload server is running on port 35729
+2025-01-01T17:34:24.292+0700 INFO Starting ProtocolHandler ["http-nio-8080"]
+2025-01-01T17:34:24.293+0700 INFO Tomcat started on port 8080 (http) with context path ''
+2025-01-01T17:34:24.296+0700 INFO Started Main in 1.44 seconds (process running for 3624.152)
+2025-01-01T17:34:24.296+0700 INFO Condition evaluation unchanged
+2025-01-01T17:34:38.100+0700 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-01T17:34:38.101+0700 INFO Initializing Servlet 'dispatcherServlet'
+2025-01-01T17:34:38.103+0700 INFO Completed initialization in 2 ms
+2025-01-01T17:34:38.451+0700 WARN Resolved [ru.tomsknipineft.utils.exceptions.NoResourceException: У задачи 'Задание на пересечение с трубопроводами' не задан ресурс.]
+2025-01-01T17:34:38.480+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T17:35:00.293+0700 WARN Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-01-01T17:35:29.493+0700 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-01T17:35:29.494+0700 INFO HikariPool-20 - Shutdown initiated...
+2025-01-01T17:35:29.496+0700 INFO HikariPool-20 - Shutdown completed.

@@ -5,6 +5,8 @@ package ru.tomsknipineft.services.baseService;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import org.jfree.data.category.DefaultCategoryDataset;
+import org.jfree.data.xy.XYSeries;
+import org.jfree.data.xy.XYSeriesCollection;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 import ru.tomsknipineft.entities.EngineeringSurveys;
@@ -40,7 +42,7 @@ public class RoadCreateDataBaseService {
     final static List<String> constantTask = List.of("Выдача ГИПу", "Выдача тома", "Отработка разделов", "Отработка тома",
             "Выдача задания в ОТВиП на сбор поверхностных и талых вод с проезжей части", "Объем поверхностных стоков",
             "Объем поверхностных стоков в ВОЗ (ОАД)", "Разработка рабочих чертежей по сбору стоков",
-            "Подготовка материалов к отводу по проекту", "Выдача площадей в ОГП", "Задание для ООС и ОПОС - потребности в землях",
+            "Подготовка материалов к отводу по проекту", "Выдача площадей в ОГП", "Задание для ООВОС и ОПОС - потребности в землях",
             "Разработка предварительного сводного сметного расчета", "Сводный сметный расчет по стадии РД", "Задание в ОС на расчеты ССР",
             "На составление смет по рекультивации земель", "На составление смет по выдаче компенсационных платежей");
 
@@ -51,6 +53,7 @@ public class RoadCreateDataBaseService {
 
     /**
      * Загрузка графика ПСД по автодороге в БД
+     *
      * @param road     какая-то дорога
      * @param fileName путь с названием графика в mpp-формате
      * @return сущность дорогу с загруженном в нее графиком ПСД
@@ -86,6 +89,7 @@ public class RoadCreateDataBaseService {
 
     /**
      * Загрузки графика ИИ по автодороге в БД
+     *
      * @param road какая-то дорога
      * @return сущность дорогу с загруженном в нее графиком ИИ
      */
@@ -105,8 +109,10 @@ public class RoadCreateDataBaseService {
         return road;
     }
 
+
     /**
      * Загрузка сущности автодороги с определенными характеристиками и графиками в базу данных
+     *
      * @param road какая-то дорога
      * @param file файл с графиком в mpp-формате
      * @throws IOException исключение
@@ -115,11 +121,16 @@ public class RoadCreateDataBaseService {
         String filePath = "E://MyJob/calendar_api/log-service/downloads_schedule/" + file.getOriginalFilename(); // уточнить адрес при размещении на сервере
         file.transferTo(new File(filePath)); // Сохранение файла
         road = loadRoadSchedule(road, filePath);
+        if (roadRepository.findByCategoryAndLength(road.getCategory(), road.getLength()).isPresent()) {
+            System.out.println(roadRepository.findByCategoryAndLength(road.getCategory(), road.getLength()).isPresent());
+            roadRepository.deleteAll(roadRepository.findAllByCategoryAndLength(road.getCategory(), road.getLength()).orElseThrow());
+        }
         roadRepository.save(road);
     }
 
     /**
      * Метод формирования данных из БД по автодорогам для их визуализации на странице (в виде таблицы, графиков)
+     *
      * @return список автодорог с данными
      */
     public List<Road> dataFromRoadInBase() {
@@ -134,6 +145,8 @@ public class RoadCreateDataBaseService {
                     .filter(taskSchedule -> !taskSchedule.getDepartment().equals(constantDepartments.get(0)))
                     .filter(taskSchedule -> !taskSchedule.getDepartment().equals(constantDepartments.get(1)))
                     .filter(taskSchedule -> !taskSchedule.getDepartment().equals(constantDepartments.get(2)))
+                    .filter(taskSchedule -> !(taskSchedule.getTaskName().equals("На составление смет (стадия РД)")
+                            && taskSchedule.getDepartment().equals("ОТВиП")))
                     .collect(Collectors.toList());
             for (String elem :
                     constantTask) {
@@ -154,12 +167,13 @@ public class RoadCreateDataBaseService {
      */
     public void createGraphFromBase(HttpServletResponse response) {
         CreateGraph graph = new CreateGraph();
-        DefaultCategoryDataset dataset = new DefaultCategoryDataset();
+        XYSeriesCollection dataset = new XYSeriesCollection();
         for (Road road :
                 dataFromRoadInBase()) {
-            dataset = graph.createDataset(road.getTaskMainDesignDepartmentsSchedules(), road.getLength(), dataset);
+            dataset = graph.createDataset(road.getTaskMainDesignDepartmentsSchedules(), road.getLength(),dataset);
+//                dataset = graph.createDataset(road.getTaskMainDesignDepartmentsSchedules(), road.getLength(), dataset);
         }
         graph.getChart(response, "Графики по автомобильным дорогам"
-                , "Протяженность автодороги", "Трудозатраты", dataset);
+                , "Протяженность автодороги, км", "Трудозатраты, чел/дн", dataset);
     }
 }

@@ -21,6 +21,12 @@ public class IncorrectDataExceptionHandler {
     }
 
     @ExceptionHandler
+    public ResponseEntity<CalendarIncorrectData> handlerException(NoResourceException exception){
+        CalendarIncorrectData data = new CalendarIncorrectData(exception.getMessage(),HttpStatus.BAD_REQUEST.value());
+        return new ResponseEntity<>(data, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler
     public ResponseEntity<CalendarIncorrectData> handlerException(NoSuchEntityException exception){
         CalendarIncorrectData data = new CalendarIncorrectData(exception.getMessage(),HttpStatus.BAD_REQUEST.value());
         return new ResponseEntity<>(data, HttpStatus.BAD_REQUEST);

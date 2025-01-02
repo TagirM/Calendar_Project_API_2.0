@@ -78,7 +78,7 @@ public class Road implements OilPad, EntityProject, Serializable {
     @NotNull(message = "Категория не заполнена", groups = OnActiveCheck.class)
     @Min(value = 3, message = "Неверно указана категория", groups = OnActiveCheck.class)
     @Max(value = 4, message = "Неверно указана категория", groups = OnActiveCheck.class)
-    private Integer category;
+    private Integer category = 4;
 
     //    общая протяженность дорог, км
     @NotNull(message = "Длина не заполнена", groups = OnActiveCheck.class)

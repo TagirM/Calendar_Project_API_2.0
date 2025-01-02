@@ -7,6 +7,7 @@ import net.sf.mpxj.reader.UniversalProjectReader;
 import ru.tomsknipineft.entities.TaskSchedule;
 import ru.tomsknipineft.entities.WorkloadDepartments;
 import ru.tomsknipineft.entities.linearObjects.Road;
+import ru.tomsknipineft.utils.exceptions.NoResourceException;
 
 import java.io.File;
 import java.time.LocalDateTime;
@@ -37,17 +38,16 @@ public class MppLoader {
      */
     public List<TaskSchedule> mppReaderForScheduleMainDesignDepartments(String filePath, Road road) {
         Set<String> mainDesignDepartments = road.getMainDesignDepartments(); // получаем набор ведущих отделов
-        return separateAndLoadTasksFromSchedule(filePath, road, mainDesignDepartments);
+        return separateAndLoadTasksFromSchedule(filePath, mainDesignDepartments);
     }
 
     /**
      * Формирование списка задач из графика в модель данных из БД
      * @param filePath путь, где находится график
-     * @param road сущность - сооружение
      * @param designDepartments список проектных отделов
      * @return список задач
      */
-    private List<TaskSchedule> separateAndLoadTasksFromSchedule(String filePath, Road road, Set<String> designDepartments){
+    private List<TaskSchedule> separateAndLoadTasksFromSchedule(String filePath, Set<String> designDepartments){
         List<TaskSchedule> taskSchedules = new ArrayList<>();
         ProjectFile projectFile = createProjectFile(filePath);
         for (Task task : projectFile.getTasks()) {
@@ -90,7 +90,7 @@ public class MppLoader {
                         for (Task greatChild :
                                 t.getChildTasks()) {
                             // Создается новая подзадача
-                            createTaskSchedule(t, taskSchedules);
+                            createTaskSchedule(greatChild, taskSchedules);
 //                            TaskSchedule taskSchedule1 = new TaskSchedule();
 //                            // Считываем данные
 //                            String departmentName1 = "";
@@ -138,6 +138,9 @@ public class MppLoader {
         String departmentName = "";
         List<ResourceAssignment> assignments = t.getResourceAssignments();
         if (!assignments.isEmpty()) {
+            if (assignments.get(0).getResource() == null){
+                throw new NoResourceException("У задачи '" + t.getName() + "' не задан ресурс.");
+            }
             departmentName = assignments.get(0).getResource().getName(); //.get(TaskField.TEXT3)
             LocalDateTime start = t.getStart();
             LocalDateTime finish = t.getFinish();
@@ -245,7 +248,7 @@ public class MppLoader {
 //                }
 //            }
 //        }
-        return separateAndLoadTasksFromSchedule(filePath, road, additionalDesignDepartments);
+        return separateAndLoadTasksFromSchedule(filePath, additionalDesignDepartments);
     }
 
     private void taskParsing() {
@@ -294,7 +297,7 @@ public class MppLoader {
                         for (Task greatChild :
                                 t.getChildTasks()) {
                             // Считывание трудозатрат с одной подзадачи и записывание ее отделу
-                            taskWorkLoad(t, departments);
+                            taskWorkLoad(greatChild, departments);
 //                            String departmentName1 = "";
 //                            List<ResourceAssignment> assignments1 = greatChild.getResourceAssignments();
 //                            if (!assignments1.isEmpty()) {
@@ -336,11 +339,13 @@ public class MppLoader {
         String departmentName = "";
         List<ResourceAssignment> assignments = t.getResourceAssignments();
         if (!assignments.isEmpty()) {
+            if (assignments.get(0).getResource() == null){
+                throw new NoResourceException("У задачи '" + t.getName() + "' не задан ресурс.");
+            }
             departmentName = assignments.get(0).getResource().getName(); //.get(TaskField.TEXT3)
         }
         if (!departmentName.isEmpty()) {
             Duration durationTask = t.getDuration();
-            System.out.println(durationTask.toString());
             double durationTaskInDay = durationTask.getDuration();
             if (durationTask.toString().contains("h")) {
                 durationTaskInDay = durationTaskInDay / 8;
